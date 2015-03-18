@@ -1,24 +1,35 @@
-// =============================================================================
-// ,,,,,,,,, ,,,
-// ,,,,,,,, ,,,  Copyright:
-// ,,,     ,,,          This source is subject to the Designveloper JSC
-// ,,,    ,,,           All using or modify must have permission from us.
-// ,,,   ,,,            http://designveloper.com
-// ,,,,,,,,
-// ,,,,,,,       Name:  DSVScriptTemplate
-//
-// Purpose:
-//          Describe the purpose of the script [short version]
-// Class:
-//          one ; two ; three
-// Functions:
-//          one ; two ; three
-// Called From:
-//          (script) any
-// Author:
-//          actiontwo
-// Notes:
-//          Additional information [long version]
-// Changelog:
-//          1/29/15 - actiontwo - Init first revision.
-// =============================================================================
+$(document).ready(function(){
+
+soundManager.setup({
+    url: 'js/swf/',
+    onready: function() {
+      var mySound = soundManager.createSound({
+        id: 'introLesson1',
+        url: 'js/mp3/lesson1/intro.mp3'
+      });
+//      mySound.play();
+      console.log(mySound.length);
+      var count = 0;
+      mySound.play({
+        multiShot: false,
+        whileplaying: function() {
+          var currentTime = this.position;
+          var duration = this.duration;
+//          console.log (currentTime);
+          // demo only: show sound position while playing, for context
+          $('.range').val(currentTime/duration*100);
+          if (currentTime > 300 && count == 0 ){
+            $('#sentence1').fadeIn(1000);
+            count++;
+          }
+//          console.log(this.position/1000);
+        }
+      });
+    },
+    ontimeout: function() {
+      // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+    }
+  });
+
+})
+;
