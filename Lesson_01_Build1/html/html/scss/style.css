@@ -213,20 +213,30 @@ div#sentence1 {
 
 /* Background Wrapper */
 /* line 2, ../../jade/scss/_home.scss */
+body {
+  background-color: #000000;
+  padding: 30px 0 0; }
+
+/* line 7, ../../jade/scss/_home.scss */
 #bgWrapper {
   background: url("../image/tv_frame.png") 0 0 no-repeat black;
   background-size: cover;
-  padding: 70px 50px;
-  position: relative; }
+  padding: 52px 37px;
+  position: relative;
+  width: 980px;
+  height: 640px;
+  margin: auto;
+  box-sizing: border-box; }
 
 /* Main Wrapper */
-/* line 11, ../../jade/scss/_home.scss */
+/* line 19, ../../jade/scss/_home.scss */
 #mainWrapper {
-  position: relative; }
-  /* line 13, ../../jade/scss/_home.scss */
+  position: relative;
+  margin: auto; }
+  /* line 22, ../../jade/scss/_home.scss */
   #mainWrapper .btn-skip-intro {
     position: absolute;
-    bottom: -60px;
+    bottom: -50px;
     left: -5px; }
 
 /*# sourceMappingURL=style.css.map */
