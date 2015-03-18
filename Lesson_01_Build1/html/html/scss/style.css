@@ -56,6 +56,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Helper Classes */
+/* line 2, ../../jade/scss/common/_helper.scss */
+.hide {
+  display: none; }
+
+/* Images */
+/* line 8, ../../jade/scss/common/_helper.scss */
+.img-responsive {
+  max-width: 100%;
+  height: auto; }
+
+/* Buttons */
+/* line 17, ../../jade/scss/common/_helper.scss */
+.btn-skip-intro {
+  background: url("../image/btn_skip_intro.png") 0 0 no-repeat;
+  width: 64px;
+  height: 35px;
+  cursor: pointer; }
+  /* line 23, ../../jade/scss/common/_helper.scss */
+  .btn-skip-intro:hover {
+    background: url("../image/btn_skip_intro_hover.png") 0 0 no-repeat; }
+
 /* line 1, ../../jade/scss/_musicbar.scss */
 input[type=range] {
   -webkit-appearance: none;
@@ -183,3 +205,23 @@ div#sentence1 {
   height: 100px;
   border-radius: 13px;
   border: 5px solid; }
+
+/* Background Wrapper */
+/* line 2, ../../jade/scss/_home.scss */
+#bgWrapper {
+  background: url("../image/tv_frame.png") 0 0 no-repeat black;
+  background-size: cover;
+  padding: 70px 50px;
+  position: relative; }
+
+/* Main Wrapper */
+/* line 11, ../../jade/scss/_home.scss */
+#mainWrapper {
+  position: relative; }
+  /* line 13, ../../jade/scss/_home.scss */
+  #mainWrapper .btn-skip-intro {
+    position: absolute;
+    bottom: -60px;
+    left: -5px; }
+
+/*# sourceMappingURL=style.css.map */

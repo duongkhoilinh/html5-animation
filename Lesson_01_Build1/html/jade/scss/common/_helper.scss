@@ -1,0 +1,28 @@
+/* Helper Classes */
+.hide {
+  display: none;
+}
+
+/* Images */
+.img {
+  &-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Buttons */
+.btn {
+
+  &-skip-intro {
+    background: url('#{$img_path}/btn_skip_intro.png') 0 0 no-repeat;
+    width: 64px;
+    height: 35px;
+    cursor: pointer;
+
+    &:hover {
+      background: url('#{$img_path}/btn_skip_intro_hover.png') 0 0 no-repeat;
+    }
+  }
+
+}

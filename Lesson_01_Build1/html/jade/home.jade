@@ -1,2 +1,18 @@
 extends index
 block main
+    div#bgWrapper
+
+        div#mainWrapper
+
+            image(
+            src='image/introlesson1.png',
+            alt='',
+            class='img-responsive')
+
+            btn(
+            class='btn btn-skip-intro'
+            , value='Skip Intro'
+            )
+
+block extrascript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js' type='text/javascript')

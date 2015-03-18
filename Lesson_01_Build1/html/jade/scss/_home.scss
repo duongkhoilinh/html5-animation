@@ -1,0 +1,20 @@
+/* Background Wrapper */
+#bgWrapper {
+  background: url("#{$img_path}/tv_frame.png") 0 0 no-repeat black;
+  background-size: cover;
+  padding: 70px 50px;
+  position: relative;
+
+}
+
+/* Main Wrapper */
+#mainWrapper {
+  position: relative;
+  .btn-skip-intro {
+    position: absolute;
+    bottom: -60px;
+    left: -5px;
+  }
+
+}
+
