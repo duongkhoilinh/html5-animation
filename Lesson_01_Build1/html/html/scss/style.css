@@ -158,23 +158,28 @@ input[type=range]:focus::-ms-fill-upper {
   background: #367ebd; }
 
 /* line 91, ../../jade/scss/_musicbar.scss */
+div#backgroundIntroLesson1 {
+  width: 800px;
+  margin: 0 auto; }
+
+/* line 95, ../../jade/scss/_musicbar.scss */
 div#backgroundIntroLesson1 img {
   width: 100%;
   height: auto; }
 
-/* line 96, ../../jade/scss/_musicbar.scss */
+/* line 100, ../../jade/scss/_musicbar.scss */
 div#lesson1 {
   position: relative; }
 
-/* line 100, ../../jade/scss/_musicbar.scss */
+/* line 104, ../../jade/scss/_musicbar.scss */
 div#sentence1 {
   transition: 0.3s all ease-in-out;
   position: absolute;
   top: 10%;
-  right: 5%;
-  display: none; }
+  right: 160px;
+  opacity: 0; }
 
-/* line 108, ../../jade/scss/_musicbar.scss */
+/* line 115, ../../jade/scss/_musicbar.scss */
 .blue-box {
   background: #0089ff;
   color: white;

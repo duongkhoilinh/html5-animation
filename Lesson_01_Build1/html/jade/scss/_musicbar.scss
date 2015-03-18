@@ -88,8 +88,12 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
+div#backgroundIntroLesson1{
+  width: 800px;
+  margin: 0 auto;
+}
 div#backgroundIntroLesson1 img {
-  width: 100%;
+ width: 100%;
   height: auto;
 }
 
@@ -101,8 +105,11 @@ div#sentence1 {
   transition: 0.3s all ease-in-out;
   position: absolute;
   top: 10%;
-  right: 5%;
-  display: none;
+  right: 160px;
+  opacity: 0;
+}
+#intro{
+
 }
 
 .blue-box {

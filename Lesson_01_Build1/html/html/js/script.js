@@ -18,8 +18,12 @@ soundManager.setup({
 //          console.log (currentTime);
           // demo only: show sound position while playing, for context
           $('.range').val(currentTime/duration*100);
-          if (currentTime > 300 && count == 0 ){
-            $('#sentence1').fadeIn(1000);
+          if (currentTime > 1000 && count ==0 ){
+            $('#sentence1').css({
+              opacity:1,
+              right:'200px'
+            });
+            console.log(count);
             count++;
           }
 //          console.log(this.position/1000);
