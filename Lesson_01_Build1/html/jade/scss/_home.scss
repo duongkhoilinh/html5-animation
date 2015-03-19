@@ -19,10 +19,31 @@ body {
 #mainWrapper {
   position: relative;
   margin: auto;
+
   .btn-skip-intro {
     position: absolute;
     bottom: -50px;
     left: -5px;
+  }
+
+
+  /* Intro */
+  .welcomeText{
+    position: absolute;
+    right: 40px;
+    bottom: 300px;
+    width: 271px;
+    height: 137px;
+    overflow: hidden;
+    img{
+      display: none;
+      &.show{
+        display: block !important;
+      }
+      &.hide{
+        display: none !important;
+      }
+    }
   }
 
 }

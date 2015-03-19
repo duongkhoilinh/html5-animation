@@ -6,7 +6,6 @@ Version:0.1
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, ../../jade/scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,67 +27,54 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, ../../jade/scss/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 33, ../../jade/scss/_reset.scss */
 body {
   line-height: 1; }
 
-/* line 37, ../../jade/scss/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 41, ../../jade/scss/_reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 45, ../../jade/scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 51, ../../jade/scss/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* Helper Classes */
-/* line 2, ../../jade/scss/common/_helper.scss */
 .hide {
   display: none; }
 
 /* Images */
-/* line 8, ../../jade/scss/common/_helper.scss */
 .img-responsive {
   max-width: 100%;
   height: auto; }
 
 /* Buttons */
-/* line 17, ../../jade/scss/common/_helper.scss */
 .btn-skip-intro {
   background: url("../image/btn_skip_intro.png") 0 0 no-repeat;
   width: 64px;
   height: 35px;
   cursor: pointer; }
-  /* line 23, ../../jade/scss/common/_helper.scss */
   .btn-skip-intro:hover {
     background: url("../image/btn_skip_intro_hover.png") 0 0 no-repeat; }
 
-/* line 1, ../../jade/scss/_musicbar.scss */
 input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%; }
 
-/* line 7, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus {
   outline: none; }
 
-/* line 11, ../../jade/scss/_musicbar.scss */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
@@ -99,7 +85,6 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101; }
 
-/* line 22, ../../jade/scss/_musicbar.scss */
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -111,11 +96,9 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px; }
 
-/* line 34, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd; }
 
-/* line 38, ../../jade/scss/_musicbar.scss */
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 8.4px;
@@ -126,7 +109,6 @@ input[type=range]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101; }
 
-/* line 49, ../../jade/scss/_musicbar.scss */
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -136,7 +118,6 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer; }
 
-/* line 59, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-track {
   width: 100%;
   height: 8.4px;
@@ -147,21 +128,18 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent; }
 
-/* line 70, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 77, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 84, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -171,45 +149,36 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer; }
 
-/* line 94, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9; }
 
-/* line 98, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd; }
 
-/* line 102, ../../jade/scss/_musicbar.scss */
 div.bg-frame {
   width: 800px;
   margin: 0 auto;
   position: relative;
   overflow: hidden; }
 
-/* line 109, ../../jade/scss/_musicbar.scss */
 div#backgroundIntroLesson1 img {
   width: 100%;
   height: auto; }
 
-/* line 114, ../../jade/scss/_musicbar.scss */
 div#lesson1 {
   position: relative; }
 
-/* line 118, ../../jade/scss/_musicbar.scss */
 div#show-sentence {
   position: absolute;
   top: 0;
   right: 0; }
 
-/* line 123, ../../jade/scss/_musicbar.scss */
 div#show-in-table {
   position: absolute; }
 
-/* line 126, ../../jade/scss/_musicbar.scss */
 .hidden {
   display: none; }
 
-/* line 134, ../../jade/scss/_musicbar.scss */
 .blue-box {
   background: #143E7C;
   color: white;
@@ -223,12 +192,10 @@ div#show-in-table {
   font-weight: 200; }
 
 /* Background Wrapper */
-/* line 2, ../../jade/scss/_home.scss */
 body {
   background-color: #000000;
   padding: 30px 0 0; }
 
-/* line 7, ../../jade/scss/_home.scss */
 #bgWrapper {
   background: url("../image/tv_frame.png") 0 0 no-repeat black;
   background-size: cover;
@@ -240,12 +207,24 @@ body {
   box-sizing: border-box; }
 
 /* Main Wrapper */
-/* line 19, ../../jade/scss/_home.scss */
 #mainWrapper {
   position: relative;
-  margin: auto; }
-  /* line 22, ../../jade/scss/_home.scss */
+  margin: auto;
+  /* Intro */ }
   #mainWrapper .btn-skip-intro {
     position: absolute;
     bottom: -50px;
     left: -5px; }
+  #mainWrapper .welcomeText {
+    position: absolute;
+    right: 40px;
+    bottom: 300px;
+    width: 271px;
+    height: 137px;
+    overflow: hidden; }
+    #mainWrapper .welcomeText img {
+      display: none; }
+      #mainWrapper .welcomeText img.show {
+        display: block !important; }
+      #mainWrapper .welcomeText img.hide {
+        display: none !important; }
