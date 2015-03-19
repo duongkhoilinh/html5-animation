@@ -1,9 +1,15 @@
 extends index
 block main
   div#lesson1
-    div#backgroundIntroLesson1
+    div#backgroundIntroLesson1.bg-frame
       img(src='image/introlesson1.png')
-    div#intro
-      div#sentence1.blue-box
-        p welcome to abc
+      div#intro
+        div#show-sentence.blue-box.hidden
+          p welcome to abc
+        div#show-in-table.hidden
+          p abc
   input.range(type="range"  min="0" max="100")
+
+block extrascript
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js' type='text/javascript')
+  script(src='http://creativecouple.github.io/jquery-timing/jquery-timing.js?v=20141012-210756' type='text/javascript')

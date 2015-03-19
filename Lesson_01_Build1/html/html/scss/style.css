@@ -84,11 +84,11 @@ input[type=range] {
   margin: 18px 0;
   width: 100%; }
 
-/* line 6, ../../jade/scss/_musicbar.scss */
+/* line 7, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus {
   outline: none; }
 
-/* line 9, ../../jade/scss/_musicbar.scss */
+/* line 11, ../../jade/scss/_musicbar.scss */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
@@ -99,7 +99,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101; }
 
-/* line 19, ../../jade/scss/_musicbar.scss */
+/* line 22, ../../jade/scss/_musicbar.scss */
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -111,11 +111,11 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px; }
 
-/* line 30, ../../jade/scss/_musicbar.scss */
+/* line 34, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd; }
 
-/* line 33, ../../jade/scss/_musicbar.scss */
+/* line 38, ../../jade/scss/_musicbar.scss */
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 8.4px;
@@ -126,7 +126,7 @@ input[type=range]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101; }
 
-/* line 43, ../../jade/scss/_musicbar.scss */
+/* line 49, ../../jade/scss/_musicbar.scss */
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -136,7 +136,7 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer; }
 
-/* line 52, ../../jade/scss/_musicbar.scss */
+/* line 59, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-track {
   width: 100%;
   height: 8.4px;
@@ -147,21 +147,21 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent; }
 
-/* line 62, ../../jade/scss/_musicbar.scss */
+/* line 70, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 68, ../../jade/scss/_musicbar.scss */
+/* line 77, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 74, ../../jade/scss/_musicbar.scss */
+/* line 84, ../../jade/scss/_musicbar.scss */
 input[type=range]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -171,45 +171,56 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer; }
 
-/* line 83, ../../jade/scss/_musicbar.scss */
+/* line 94, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9; }
 
-/* line 86, ../../jade/scss/_musicbar.scss */
+/* line 98, ../../jade/scss/_musicbar.scss */
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd; }
 
-/* line 91, ../../jade/scss/_musicbar.scss */
-div#backgroundIntroLesson1 {
+/* line 102, ../../jade/scss/_musicbar.scss */
+div.bg-frame {
   width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
 
-/* line 95, ../../jade/scss/_musicbar.scss */
+/* line 109, ../../jade/scss/_musicbar.scss */
 div#backgroundIntroLesson1 img {
   width: 100%;
   height: auto; }
 
-/* line 100, ../../jade/scss/_musicbar.scss */
+/* line 114, ../../jade/scss/_musicbar.scss */
 div#lesson1 {
   position: relative; }
 
-/* line 104, ../../jade/scss/_musicbar.scss */
-div#sentence1 {
-  transition: 0.3s all ease-in-out;
+/* line 118, ../../jade/scss/_musicbar.scss */
+div#show-sentence {
   position: absolute;
-  top: 10%;
-  right: 160px;
-  opacity: 0; }
+  top: 0;
+  right: 0; }
 
-/* line 115, ../../jade/scss/_musicbar.scss */
+/* line 123, ../../jade/scss/_musicbar.scss */
+div#show-in-table {
+  position: absolute; }
+
+/* line 126, ../../jade/scss/_musicbar.scss */
+.hidden {
+  display: none; }
+
+/* line 134, ../../jade/scss/_musicbar.scss */
 .blue-box {
-  background: #0089ff;
+  background: #143E7C;
   color: white;
   padding: 10px;
   width: 200px;
-  height: 100px;
+  min-height: 50px;
   border-radius: 13px;
-  border: 5px solid; }
+  border: 3px solid;
+  box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 200; }
 
 /* Background Wrapper */
 /* line 2, ../../jade/scss/_home.scss */
@@ -238,5 +249,3 @@ body {
     position: absolute;
     bottom: -50px;
     left: -5px; }
-
-/*# sourceMappingURL=style.css.map */
