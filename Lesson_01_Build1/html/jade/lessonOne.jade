@@ -1,0 +1,69 @@
+extends index
+block main
+  .layout1
+    .layout2
+      div#tv_frame
+        img#tv(src='image/tv_frame.png')
+        div#lesson1.bg-frame
+          #skip
+          div.background
+            img(src='image/introlesson1.png')
+            img(src='image/inside_the_room.png').hide
+            img(src='image/inside_the_room_1.jpg').hide
+            img(src='image/inside_the_room_2.png').hide
+            #background-blue
+              .inside-box
+            div#show-sentence.blue-box.hide
+              div.intro
+                p(data-top='160px' data-right='150px') Welcome to News at 9. I'm your host Sally James. As you all know, every Firday we meet a special guest and learn from their success story.
+                p(data-top='160px' data-right='150px') Today, we have with us a successfull entrepreneur, and winner of this year's The Chamber of Commerce, Business of the Year Award, Mr. Chris Fox.
+                p(data-top='160px' data-right='150px') Before we welcome him, here are the points we are going on to discuss today:
+                p(data-top='240px' data-right='20px') Wellcome Mr. Fox tow News @9. Firstly, Congratulations on your achievement.
+                p(data-top='200px' data-right='200px') Thank you very much
+                p(data-top='320px' data-left='250px') So Mr. Fox, how does it feel, to win such a great honor?
+                p(data-top='240px' data-right='250px') It feel absolutely great. Looking back, the journey that I began a few years ago means a lot of me.
+                p(data-top='240px' data-right='350px') Ok, Please tell us about this journey of yours. How did you get start on this business?
+                p(data-top='240px' data-right='250px') To answer your question, I will have to take you ten years back, when i deciding on a business.
+              div.part1
+                p(data-top='160px' data-right='150px') Before we move on, let me tell our viewers what are going to discuss in this segment.
+                p(data-top='260px' data-left='150px') Yes Mr. For tell us about your journey to this point in time.
+                p(data-top='230px' data-right='200px' data-width='250px') Initilly when I thoungt about starting a new business I encountered many question, such as :
+                  span Am i up to it?
+                  span What industry, where to locate, etc?
+                  span Should i choess a full or par-time opportunity?
+                p(data-top='230px' data-right='200px' data-width='250px') Let go back a few years. I would like to share the answers I found to there questions, through my own experience.
+                p(data-top='260px' data-left='150px') Click the highlighted calendar to learn about Mr. For'x jounrey.
+            div#show-in-table.hide
+              div.intro
+                p In this episode, we are going to discuss:
+                p How to select the business that's just right for you
+                p How to avoid the most common, but serious mistake made in business--not picking the right one to begin with
+                p How to avoid potential mistakes from experience and wisdom of others
+              div.part1
+                p In this segment, we are going to discuss:
+                p What thing one should decide before starting a business
+                p How to select a business that is just right for you
+              div.part1-calendar.calendar-1
+                p Are you sure are up to it?
+                p You are putting some (not all, hopefully) of your net worth at risk.
+                p You may run the risk of creating a lift that is out of balance, with working hours talking away from other family or pleasurable activities
+                p There may be levels of strees you have not experienced as an employee
+              div.part1-calendar.calendar-2
+                p What business do you want to start and where do you want to locate it?
+                p You must decide which type of business is best for you.
+                p Where your expertise lies.
+                p Where your locate that business.
+              div.part1-calendar.calendar-3
+                p Is it going to be full-time?
+                p Are you going to devote all your time to it. Or will be part-time?
+                p There are some advantages and some pitfalls in operating as a part-time business
+                p Where your locate that business.
+            div#click-redx.hide
+                p.where-part1-calendar click on the Red 'x' to continue.
+
+
+
+  //input.range(type="range"  min="0" max="100")
+
+block append scripts
+  script(src='js/lesson_one.js' type='text/javascript')

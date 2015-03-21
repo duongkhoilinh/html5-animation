@@ -6,6 +6,7 @@ Version:0.1
    v2.0 | 20110126
    License: none (public domain)
 */
+/* line 6, ../../jade/scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,159 +28,59 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 28, ../../jade/scss/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 33, ../../jade/scss/_reset.scss */
 body {
   line-height: 1; }
 
+/* line 37, ../../jade/scss/_reset.scss */
 ol, ul {
   list-style: none; }
 
+/* line 41, ../../jade/scss/_reset.scss */
 blockquote, q {
   quotes: none; }
 
+/* line 45, ../../jade/scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
+/* line 51, ../../jade/scss/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* Helper Classes */
+/* line 2, ../../jade/scss/common/_helper.scss */
 .hide {
   display: none; }
 
 /* Images */
+/* line 8, ../../jade/scss/common/_helper.scss */
 .img-responsive {
   max-width: 100%;
   height: auto; }
 
 /* Buttons */
+/* line 17, ../../jade/scss/common/_helper.scss */
 .btn-skip-intro {
   background: url("../image/btn_skip_intro.png") 0 0 no-repeat;
   width: 64px;
   height: 35px;
   cursor: pointer; }
+  /* line 23, ../../jade/scss/common/_helper.scss */
   .btn-skip-intro:hover {
     background: url("../image/btn_skip_intro_hover.png") 0 0 no-repeat; }
 
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 18px 0;
-  width: 100%; }
-
-input[type=range]:focus {
-  outline: none; }
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101; }
-
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -14px; }
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #367ebd; }
-
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101; }
-
-input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer; }
-
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent; }
-
-input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
-
-input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
-
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer; }
-
-input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9; }
-
-input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd; }
-
-div.bg-frame {
-  width: 800px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden; }
-
-div#backgroundIntroLesson1 img {
-  width: 100%;
-  height: auto; }
-
-div#lesson1 {
-  position: relative; }
-
-div#show-sentence {
+/* line 1, ../../jade/scss/_lessonOne.scss */
+.blue-box p {
   position: absolute;
-  top: 0;
-  right: 0; }
-
-div#show-in-table {
-  position: absolute; }
-
-.hidden {
-  display: none; }
-
-.blue-box {
   background: #143E7C;
   color: white;
   padding: 10px;
@@ -189,13 +90,113 @@ div#show-in-table {
   border: 3px solid;
   box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.8);
   font-size: 14px;
-  font-weight: 200; }
+  font-weight: 200;
+  line-height: 19px; }
+  /* line 14, ../../jade/scss/_lessonOne.scss */
+  .blue-box p span {
+    display: block;
+    margin-left: 20px; }
+
+/* line 20, ../../jade/scss/_lessonOne.scss */
+.layout1 {
+  display: table;
+  width: 100%; }
+
+/* line 25, ../../jade/scss/_lessonOne.scss */
+.layout2 {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 30, ../../jade/scss/_lessonOne.scss */
+.bg-frame {
+  padding: 63px 44px;
+  box-sizing: border-box; }
+
+/* line 35, ../../jade/scss/_lessonOne.scss */
+div#tv_frame {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+  /* line 39, ../../jade/scss/_lessonOne.scss */
+  div#tv_frame #tv {
+    width: 100%;
+    position: absolute; }
+
+/* line 45, ../../jade/scss/_lessonOne.scss */
+.background {
+  position: relative;
+  overflow: hidden; }
+  /* line 48, ../../jade/scss/_lessonOne.scss */
+  .background img {
+    width: 100%; }
+
+/* line 54, ../../jade/scss/_lessonOne.scss */
+div#show-in-table {
+  font-size: 15px; }
+  /* line 55, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table > div {
+    position: absolute; }
+  /* line 59, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table p {
+    line-height: 22px;
+    margin-bottom: 19px; }
+    /* line 62, ../../jade/scss/_lessonOne.scss */
+    div#show-in-table p:first-child {
+      font-weight: 800;
+      margin-bottom: 12px; }
+  /* line 67, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table .intro {
+    top: 205px;
+    left: 218px;
+    width: 360px; }
+  /* line 72, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table .part1 {
+    top: 200px;
+    left: 59px;
+    color: white; }
+
+/* line 80, ../../jade/scss/_lessonOne.scss */
+div#skip {
+  background: url("img/btn_skip_intro.png") no-repeat;
+  height: 35px;
+  width: 65px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer; }
+  /* line 88, ../../jade/scss/_lessonOne.scss */
+  div#skip:hover {
+    background: url("img/btn_skip_intro_hover.png") no-repeat; }
+
+/* line 93, ../../jade/scss/_lessonOne.scss */
+div#click-redx {
+  position: absolute; }
+
+/* line 97, ../../jade/scss/_lessonOne.scss */
+div#background-blue {
+  transition: 1s all ease-in-out;
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: rgba(15, 116, 213, 0.7); }
+  /* line 105, ../../jade/scss/_lessonOne.scss */
+  div#background-blue .inside-box {
+    height: 200px;
+    width: 80%;
+    background: rgba(25, 81, 177, 0.6);
+    top: 26%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid #0f3658; }
 
 /* Background Wrapper */
+/* line 2, ../../jade/scss/_home.scss */
 body {
-  background-color: #000000;
-  padding: 30px 0 0; }
+  background-color: #ccc; }
 
+/* line 6, ../../jade/scss/_home.scss */
 #bgWrapper {
   background: url("../image/tv_frame.png") 0 0 no-repeat black;
   background-size: cover;
@@ -207,14 +208,17 @@ body {
   box-sizing: border-box; }
 
 /* Main Wrapper */
+/* line 18, ../../jade/scss/_home.scss */
 #mainWrapper {
   position: relative;
   margin: auto;
   /* Intro */ }
+  /* line 22, ../../jade/scss/_home.scss */
   #mainWrapper .btn-skip-intro {
     position: absolute;
     bottom: -50px;
     left: -5px; }
+  /* line 30, ../../jade/scss/_home.scss */
   #mainWrapper .welcomeText {
     position: absolute;
     right: 40px;
@@ -222,9 +226,12 @@ body {
     width: 271px;
     height: 137px;
     overflow: hidden; }
+    /* line 37, ../../jade/scss/_home.scss */
     #mainWrapper .welcomeText img {
       display: none; }
+      /* line 39, ../../jade/scss/_home.scss */
       #mainWrapper .welcomeText img.show {
         display: block !important; }
+      /* line 42, ../../jade/scss/_home.scss */
       #mainWrapper .welcomeText img.hide {
         display: none !important; }

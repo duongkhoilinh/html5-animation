@@ -1,16 +1,16 @@
 extends index
 block main
-	div#bgWrapper
-		div#mainWrapper
-			btn(            class='btn btn-skip-intro', id="skipIntro", value='Skip Intro'            )
-			div
-				image(
-				src='image/introlesson1.png',
-				class='img-responsive')
+  div#bgWrapper
+    div#mainWrapper
+      btn(            class='btn btn-skip-intro', id="skipIntro", value='Skip Intro'            )
+      div
+        image(
+        src='image/introlesson1.png',
+        class='img-responsive')
 
-				include includes/intro/popup_welcome
+        include includes/intro/popup_welcome
 
 block append scripts
-	script(
-	src='js/intro/popup_welcome.js'
-	)
+  script(
+  src='js/intro/popup_welcome.js'
+  )

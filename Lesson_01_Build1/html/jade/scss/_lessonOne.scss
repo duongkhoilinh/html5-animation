@@ -1,0 +1,115 @@
+.blue-box p {
+  position: absolute;
+  background: #143E7C;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  min-height: 50px;
+  border-radius: 13px;
+  border: 3px solid;
+  box-shadow: 1px 1px 7px 3px rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 19px;
+  span {
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+.layout1 {
+  display: table;
+  width: 100%;
+}
+
+.layout2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.bg-frame {
+  padding: 63px 44px;
+  box-sizing: border-box;
+}
+
+div#tv_frame {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  #tv {
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.background {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+
+  }
+}
+
+div#show-in-table {
+  > div {
+    position: absolute;
+  }
+  font-size: 15px;
+  p {
+    line-height: 22px;
+    margin-bottom: 19px;
+    &:first-child {
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+  }
+  .intro {
+    top: 205px;
+    left: 218px;
+    width: 360px;
+  }
+  .part1 {
+    top: 200px;
+    left: 59px;
+    color: white;
+  }
+
+}
+
+div#skip {
+
+  background: url("img/btn_skip_intro.png") no-repeat;
+  height: 35px;
+  width: 65px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  &:hover {
+    background: url("img/btn_skip_intro_hover.png") no-repeat;
+  }
+}
+
+div#click-redx {
+  position: absolute;
+}
+
+div#background-blue {
+  transition: 1s all ease-in-out;
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: rgba(15, 116, 213, 0.7);
+  .inside-box {
+    height: 200px;
+    width: 80%;
+    background: rgba(25, 81, 177, 0.6);
+    top: 26%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid rgb(15, 54, 88);
+  }
+}
