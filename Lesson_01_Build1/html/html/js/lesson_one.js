@@ -9,6 +9,11 @@ $(document).ready(function () {
   var introClass = '.intro';
   var part1Class = '.part1';
   var bgBlue = $('#background-blue');
+  var tvFrame = $('#tv_frame');
+  var control = $('#control');
+  var glossaryBtn = $('#menu-glossary');
+  var homeBtn =$('#menu-home');
+  var glossary = $('#glossary');
 
   soundManager.setup({
     url: 'js/swf/',
@@ -114,7 +119,7 @@ $(document).ready(function () {
     } else {
       position['left'] = current.data('left')
     }
-    if(current.data('width')){
+    if (current.data('width')) {
       position['width'] = current.data('width')
     }
     return position;
@@ -164,13 +169,45 @@ $(document).ready(function () {
     soundManager.play(id);
   }
 
+  function changeTvbg(index) {
+    tvFrame.find('.tv').hide();
+    var padding = tvFrame.find('.tv:eq(' + index + ')').data('padding');
+    tvFrame.find('.tv:eq(' + index + ')').show();
+    tvFrame.find('.bg-frame').css({padding: padding});
+  }
+
+  glossaryBtn.click(function () {
+
+    if (glossary.hasClass('hide') || glossary.hasClass('fadeOutDown')) {
+      glossary.removeClass('hide').addClass('animated fadeInUp').removeClass('fadeOutDown');
+    } else {
+      glossary.removeClass('fadeInUp').addClass('animated fadeOutDown')
+    }
+  });
+  homeBtn.click(function (){
+    stop(idPart1Lesson1);
+    setDefaultTable();
+    setDefaultSentence();
+    changeScreen(3);
+    showRightSidebar();
+  });
   skip.click(function () {
     stop(idIntro);
     setDefaultTable();
     setDefaultSentence();
     skip.hide();
     changeScreen(3);
+    changeTvbg(1);
     showRightSidebar();
+    control.removeClass('hide');
+  });
+  glossary.find('.list-short-text li').click(function () {
+    var id = '#tab-' + $(this).data('tab');
+    if ($(this).hasClass('deactive')) {
+      return;
+    }
+    glossary.find('.content-list-short-text li').hide();
+    glossary.find(id).show();
   })
 });
 
