@@ -1,13 +1,16 @@
 $(document).ready(function () {
   var idIntro = 'introLesson1';
   var idPart1Lesson1 = 'part1Lesson1';
+  var idPart2Lesson1 = 'part1Lesson2';
   var sentence = $('#show-sentence');
   var table = $('#show-in-table');
   var background = $('.background');
   var skip = $('#skip');
+  var btnPart2 = $('#part2');
   var part1CalendarClass = $('.part1-calendar');
   var introClass = '.intro';
   var part1Class = '.part1';
+  var part2Class = '.part2';
   var bgBlue = $('#background-blue');
   var tvFrame = $('#tv_frame');
   var control = $('#control');
@@ -25,6 +28,10 @@ $(document).ready(function () {
       soundManager.createSound({
         id: idPart1Lesson1,
         url: 'js/mp3/lesson1/p1.mp3'
+      });
+      soundManager.createSound({
+        id: idPart2Lesson1,
+        url: 'js/mp3/lesson1/p2.mp3'
       });
     },
     ontimeout: function () {
@@ -66,7 +73,6 @@ $(document).ready(function () {
         position: 0
       });
       var introEvent = [
-
         {time: 0, callback: section.bind({index: 0, screen: 3, where: part1Class})},
         {time: 6000, callback: sectionTable.bind({index: 0, where: part1Class})},
         {time: 9000, callback: sectionTable.bind({index: 1, where: part1Class})},
@@ -75,7 +81,7 @@ $(document).ready(function () {
         {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
         {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
         {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
-        {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})},
+        {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
       ];
       introEvent.forEach(function (el) {
         soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
@@ -83,6 +89,31 @@ $(document).ready(function () {
 
     });
   }
+
+  function part2Lesson1Play() {
+    soundManager.onready(function () {
+      soundManager.play(idPart2Lesson1, {
+        multiShot: true,
+        position: 0
+      });
+      var introEvent = [
+        {time: 0, callback: section.bind({index: 0, screen: 2, where: part2Class})},
+        {time: 6000, callback: sectionTable.bind({index: 0, where: part2Class})},
+        {time: 9000, callback: sectionTable.bind({index: 1, where: part2Class})},
+        {time: 13000, callback: sectionTable.bind({index: 2, where: part2Class})},
+        {time: 16000, callback: hideRightSidebar},
+        {time: 17500, callback: section.bind({index: 1, screen: 2, where: part2Class})},
+        {time: 22500, callback: section.bind({index: 2, screen: 2, where: part2Class})},
+        {time: 39000, callback: section.bind({index: 3, screen: 2, where: part2Class})},
+        {time: 48000, callback: section.bind({index: 4, screen: 2, where: part2Class})}
+      ];
+      introEvent.forEach(function (el) {
+        soundManager.onPosition(idPart2Lesson1, el.time, el.callback);
+      });
+
+    });
+  }
+
 
   function setDefaultSentence() {
     sentence.addClass('hide');
@@ -146,6 +177,9 @@ $(document).ready(function () {
       part1Lesson1Play();
     }, 1300);
   }
+  function nextpart() {
+    part2Lesson1Play();
+  }
 
   function hideRightSidebar() {
     changeScreen(3);
@@ -196,11 +230,22 @@ $(document).ready(function () {
     setDefaultTable();
     setDefaultSentence();
     skip.hide();
-    changeScreen(3);
+//    changeScreen(3);
     changeTvbg(1);
-    showRightSidebar();
+//    showRightSidebar();
+    nextpart();
     control.removeClass('hide');
   });
+//  skip.click(function () {
+//    stop(idIntro);
+//    setDefaultTable();
+//    setDefaultSentence();
+//    skip.hide();
+//    changeScreen(3);
+//    changeTvbg(1);
+//    showRightSidebar();
+//    control.removeClass('hide');
+//  });
   glossary.find('.list-short-text li').click(function () {
     var id = '#tab-' + $(this).data('tab');
     if ($(this).hasClass('deactive')) {
