@@ -10,6 +10,30 @@ block main
             li: a#menu-home(href="javascript:;") Home
             li: a(href="javascript:;") Transcript
             li: a#menu-glossary(href="javascript:;") Glossary
+            li: a#btn-play(href="javascript:;") Play
+            li: a#btn-pause(href="javascript:;") Pause
+            li: a#btn-back(href="javascript:;") Back
+            li#parts-list
+              ul
+                li
+                  a#part1(href="javascript:;") 1
+                li
+                  a#part2(href="javascript:;") 2
+                li
+                  a#part3(href="javascript:;") 3
+                li
+                  a#part4(href="javascript:;") 4
+                li
+                  a#part5(href="javascript:;") 5
+                li
+                  a#part6(href="javascript:;") 6
+                li.active
+                  a#part7(href="javascript:;") 7
+                li
+                  a#part8(href="javascript:;") 8
+                li
+                  a#part9(href="javascript:;") 9
+            li: a#btn-next(href="javascript:;") Next
           #transcript.panel-fla.hide
             .title-panel
               h1 Transcript
@@ -164,8 +188,9 @@ block main
             img(src='image/inside_the_room_2.png').hide
             img(src='image/inside_the_room_3.png').hide
             img(src='image/inside_the_room_4.png').hide
-            #background-blue
+            #background-blue.animated
               .inside-box
+            #background-blue-zoomIn.animated
             div#show-sentence.blue-box.hide
               div.intro
                 p(data-top='160px' data-right='150px') Welcome to News at 9. I'm your host Sally James. As you all know, every Firday we meet a special guest and learn from their success story.

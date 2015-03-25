@@ -53,6 +53,12 @@ div#tv_frame {
     height: 650px;
   }
 }
+#btn-play {
+ margin-left: 360px;
+}
+#parts-list li.active a {
+  color: red;
+}
 div#show-sentence {
   .part6 {
     opacity: 0;
@@ -129,10 +135,10 @@ div#show-in-table {
     top: 13%;
     left: 2%;
     color: white;
-    background: rgb(0, 178, 255);
+//    background: rgb(0, 178, 255);
     width: 95%;
     height: 80%;
-    opacity: 0.6;
+//    opacity: 0.6;
     border-radius: 10px;
     p {
       display: inline-block;
@@ -161,6 +167,33 @@ div#show-in-table {
         font-size: 18px;
         width: 32%;
         display: block;
+      }
+    }
+  }
+  .part7-table2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    p {
+      position: relative;
+      span {
+        display: block;
+        margin-left: 20px;
+      }
+      &:nth-child(1) {
+        top: 62px;
+        left: 5%;
+        width: 90%;
+      }
+      &:nth-child(2) {
+        top: 100px;
+        left: 40px;
+        width: 40%;
+      }
+      &:nth-child(3) {
+        top: -236px;
+        left: 52%;
+        width: 40%;
       }
     }
   }
@@ -216,7 +249,15 @@ div#background-blue {
     border: 2px solid rgb(15, 54, 88);
   }
 }
-
+div#background-blue-zoomIn {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 86%;
+  background: rgba(15, 116, 213, 0.7);
+  border-radius: 10px;
+}
 div#control {
   /* position: absolute; */
   /* z-index: 3; */
