@@ -53,7 +53,11 @@ div#tv_frame {
     height: 650px;
   }
 }
-
+div#show-sentence {
+  .part6 {
+    opacity: 0;
+  }
+}
 div#show-in-table {
   > div {
     position: absolute;
@@ -77,11 +81,106 @@ div#show-in-table {
     left: 59px;
     color: white;
   }
-
+  .part6 {
+    color: black;
+    font-size: 17px;
+    top: 0;
+    left: 0;
+    p {
+      position: relative;
+      span {
+        display: block;
+        margin-left: 20px;
+      }
+      &:nth-child(1) {
+        top: 114px;
+        left: 26px;
+        width: 90%;
+      }
+      &:nth-child(2) {
+        top: 130px;
+        left: 340px;
+        width: 64%;
+      }
+      &:nth-child(3) {
+        top: 130px;
+        left: 340px;
+        width: 64%;
+      }
+      &:nth-child(4) {
+        top: 130px;
+        left: 340px;
+        width: 64%;
+      }
+      &:nth-child(5) {
+        top: 180px;
+        left: 40px;
+        width: 64%;
+      }
+      &:nth-child(6) {
+        top: 180px;
+        left: 40px;
+        width: 100%;
+//        display: block !important;
+      }
+    }
+  }
+  .part7-table1 {
+    top: 13%;
+    left: 2%;
+    color: white;
+    background: rgb(0, 178, 255);
+    width: 95%;
+    height: 80%;
+    opacity: 0.6;
+    border-radius: 10px;
+    p {
+      display: inline-block;
+      position: relative;
+//      font-size: 14px;
+      &:nth-child(1) {
+        top: 152px;
+        left: 29%;
+        font-size: 18px;
+      }
+      &:nth-child(2) {
+        top: 152px;
+        left: 31%;
+        font-size: 18px;
+        width: 34%;
+        display: block;
+      }
+      &:nth-child(3) {
+        top: 152px;
+        left: 31%;
+        font-size: 18px;
+      }
+      &:nth-child(4) {
+        top: 152px;
+        left: 31%;
+        font-size: 18px;
+        width: 32%;
+        display: block;
+      }
+    }
+  }
+  #btn-submit-part6 {
+    background: url("img/submit.png") no-repeat;
+    height: 57px;
+    width: 128px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: 597px;
+    left: 950px;
+    margin: 0;
+    &:hover {
+      background: url("img/submit_hover.png") no-repeat;
+    }
+  }
 }
 
 div#skip {
-
   background: url("img/btn_skip_intro.png") no-repeat;
   height: 35px;
   width: 65px;
