@@ -26,7 +26,10 @@ $(document).ready(function () {
   var part7Class = '.part7';
   var part8Class = '.part8';
   var part9Class = '.part9';
+
   var part7Table1 = '.part7-table1';
+  var part7Table2 = '.part7-table2';
+
   var bgBlue = $('#background-blue');
   var tvFrame = $('#tv_frame');
   var control = $('#control');
@@ -245,12 +248,10 @@ $(document).ready(function () {
         {time: 18580, callback: sectionTable.bind({index: 3, screen:2, where: part7Table1})},
         {time: 25500, callback: section.bind({index: 1, screen: 2, where: part7Class})},
         {time: 35000, callback: section.bind({index: 2, screen: 2, where: part7Class})},
-        {time: 42000, callback: section.bind({index: 3, screen: 2, where: part7Class})}
-//        {time: 0, callback: sectionTable.bind({index: 0, screen:5, where: part7Class})},
-//        {time: 22860, callback: sectionTable.bind({index: 1, screen:5, where: part7Class})},
-//        {time: 36530, callback: sectionTable.bind({index: 2, screen:5, where: part7Class})},
-//        {time: 53300, callback: sectionTable.bind({index: 3, screen:5, where: part7Class})},
-//        {time: 100000, callback: sectionTable.bind({index: 4, screen:5, where: part7Class})},
+        {time: 42000, callback: section.bind({index: 3, screen: 2, where: part7Class})},
+        {time: 52000, callback: sectionTable.bind({index: 0, screen:5, where: part7Table2})},
+        {time: 119910, callback: sectionTable.bind({index: 1, screen:5, where: part7Table2})},
+        {time: 217270, callback: sectionTable.bind({index: 2, screen:5, where: part7Table2})}
       ];
       introEvent.forEach(function (el) {
         soundManager.onPosition(idPart7Lesson1, el.time, el.callback);
