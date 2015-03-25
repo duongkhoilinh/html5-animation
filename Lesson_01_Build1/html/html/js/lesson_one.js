@@ -96,10 +96,10 @@ $(document).ready(function () {
       {time: 0, callback: section.bind({index: 0, screen: 0, where: introClass})},
       {time: 11200, callback: section.bind({index: 1, screen: 0, where: introClass})},
       {time: 21000, callback: section.bind({index: 2, screen: 0, where: introClass})},
-      {time: 26000, callback: sectionTable.bind({index: 0, screen:0 ,where: introClass})},
-      {time: 29000, callback: sectionTable.bind({index: 1, screen:0 ,where: introClass})},
-      {time: 32000, callback: sectionTable.bind({index: 2, screen:0 ,where: introClass})},
-      {time: 40000, callback: sectionTable.bind({index: 3, screen:0 ,where: introClass})},
+      {time: 26000, callback: sectionTable.bind({index: 0, screen: 0, where: introClass})},
+      {time: 29000, callback: sectionTable.bind({index: 1, screen: 0, where: introClass})},
+      {time: 32000, callback: sectionTable.bind({index: 2, screen: 0, where: introClass})},
+      {time: 40000, callback: sectionTable.bind({index: 3, screen: 0, where: introClass})},
       {time: 45000, callback: section.bind({index: 3, screen: 1, where: introClass})},
       {time: 52500, callback: section.bind({index: 4, screen: 1, where: introClass})},
       {time: 54500, callback: section.bind({index: 5, screen: 2, where: introClass})},
@@ -114,28 +114,32 @@ $(document).ready(function () {
 
   });
   function part1Lesson1Play() {
-
-    soundManager.onready(function () {
-      soundManager.play(idPart1Lesson1, {
-        multiShot: true,
-        position: 0
-      });
-      var introEvent = [
-        {time: 0, callback: section.bind({index: 0, screen: 3, where: part1Class})},
-        {time: 6000, callback: sectionTable.bind({index: 0, where: part1Class})},
-        {time: 9000, callback: sectionTable.bind({index: 1, where: part1Class})},
-        {time: 13000, callback: sectionTable.bind({index: 2, where: part1Class})},
-        {time: 16000, callback: hideRightSidebar},
-        {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
-        {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
-        {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
-        {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
-      ];
-      introEvent.forEach(function (el) {
-        soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
-      });
-
+    changeScreen(3);
+    bgBlue.css({
+      left: 0
     });
+    setTimeout(function () {
+      soundManager.onready(function () {
+        soundManager.play(idPart1Lesson1, {
+          multiShot: true,
+          position: 0
+        });
+        var introEvent = [
+          {time: 0, callback: section.bind({index: 0, screen: 3, where: part1Class})},
+          {time: 6000, callback: sectionTable.bind({index: 0, screen: 3, where: part1Class})},
+          {time: 9000, callback: sectionTable.bind({index: 1, screen: 3, where: part1Class})},
+          {time: 13000, callback: sectionTable.bind({index: 2, screen: 3, where: part1Class})},
+          {time: 16000, callback: hideRightSidebar},
+          {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
+          {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
+          {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
+          {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
+        ];
+        introEvent.forEach(function (el) {
+          soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
+        });
+      });
+    }, 1300);
   }
 
   function part2Lesson1Play() {
@@ -206,13 +210,14 @@ $(document).ready(function () {
       });
       var introEvent = [
         {time: 0, callback: section.bind({index: 0, screen: 2, where: part5Class})}
-        ];
+      ];
       introEvent.forEach(function (el) {
         soundManager.onPosition(idPart5Lesson1, el.time, el.callback);
       });
 
     });
   }
+
   function part6Lesson1Play() {
     soundManager.onready(function () {
       soundManager.play(idPart6Lesson1, {
@@ -221,18 +226,19 @@ $(document).ready(function () {
       });
       var introEvent = [
 //        {time: 0, callback: section.bind({index: 0, screen: 4, where: part6Class})},
-        {time: 0, callback: sectionTable.bind({index: 0, screen:4, where: part6Class})},
-        {time: 22860, callback: sectionTable.bind({index: 1, screen:4, where: part6Class})},
-        {time: 36530, callback: sectionTable.bind({index: 2, screen:4, where: part6Class})},
-        {time: 53300, callback: sectionTable.bind({index: 3, screen:4, where: part6Class})},
-        {time: 100000, callback: sectionTable.bind({index: 4, screen:4, where: part6Class})},
-        {time: 0, callback: sectionTable.bind({index: 5, screen:4, where: part6Class})}
+        {time: 0, callback: sectionTable.bind({index: 0, screen: 4, where: part6Class})},
+        {time: 22860, callback: sectionTable.bind({index: 1, screen: 4, where: part6Class})},
+        {time: 36530, callback: sectionTable.bind({index: 2, screen: 4, where: part6Class})},
+        {time: 53300, callback: sectionTable.bind({index: 3, screen: 4, where: part6Class})},
+        {time: 100000, callback: sectionTable.bind({index: 4, screen: 4, where: part6Class})},
+        {time: 0, callback: sectionTable.bind({index: 5, screen: 4, where: part6Class})}
       ];
       introEvent.forEach(function (el) {
         soundManager.onPosition(idPart6Lesson1, el.time, el.callback);
       });
     });
   }
+
   function part7Lesson1Play() {
     soundManager.onready(function () {
       soundManager.play(idPart7Lesson1, {
@@ -242,16 +248,16 @@ $(document).ready(function () {
       var introEvent = [
         {time: 0, callback: section.bind({index: 0, screen: 2, where: part7Class})},
 //        {time: 1000, calback:  showTableCenter},
-        {time: 7590, callback: sectionTable.bind({index: 0, screen:2, where: part7Table1})},
-        {time: 9500, callback: sectionTable.bind({index: 1, screen:2, where: part7Table1})},
-        {time: 15770, callback: sectionTable.bind({index: 2, screen:2, where: part7Table1})},
-        {time: 18580, callback: sectionTable.bind({index: 3, screen:2, where: part7Table1})},
+        {time: 7590, callback: sectionTable.bind({index: 0, screen: 2, where: part7Table1})},
+        {time: 9500, callback: sectionTable.bind({index: 1, screen: 2, where: part7Table1})},
+        {time: 15770, callback: sectionTable.bind({index: 2, screen: 2, where: part7Table1})},
+        {time: 18580, callback: sectionTable.bind({index: 3, screen: 2, where: part7Table1})},
         {time: 25500, callback: section.bind({index: 1, screen: 2, where: part7Class})},
         {time: 35000, callback: section.bind({index: 2, screen: 2, where: part7Class})},
         {time: 42000, callback: section.bind({index: 3, screen: 2, where: part7Class})},
-        {time: 52000, callback: sectionTable.bind({index: 0, screen:5, where: part7Table2})},
-        {time: 119910, callback: sectionTable.bind({index: 1, screen:5, where: part7Table2})},
-        {time: 217270, callback: sectionTable.bind({index: 2, screen:5, where: part7Table2})}
+        {time: 52000, callback: sectionTable.bind({index: 0, screen: 5, where: part7Table2})},
+        {time: 119910, callback: sectionTable.bind({index: 1, screen: 5, where: part7Table2})},
+        {time: 217270, callback: sectionTable.bind({index: 2, screen: 5, where: part7Table2})}
       ];
       introEvent.forEach(function (el) {
         soundManager.onPosition(idPart7Lesson1, el.time, el.callback);
@@ -259,10 +265,35 @@ $(document).ready(function () {
     });
   }
 
-  function nextpart() {
-    part7Lesson1Play();
-  }
+  function nextpart(numberPart) {
+    stop();
+    setDefaultTable();
+    setDefaultSentence();
+    switch (numberPart) {
+      case 1 :
+        showRightSidebar();
+        break;
+      case 2 :
+        part2Lesson1Play();
+        break;
+      case 3 :
+        part3Lesson1Play();
+        break;
+      case 4 :
+        part4Lesson1Play();
+        break;
+      case 5:
+        part5Lesson1Play();
+        break;
+      case 6:
+        part6Lesson1Play();
+        break;
+      case 7 :
+        part7Lesson1Play();
+        break;
+    }
 
+  }
 
   function setDefaultSentence() {
     sentence.addClass('hide');
@@ -336,14 +367,16 @@ $(document).ready(function () {
     setDefaultTable();
     setDefaultSentence();
   }
+
   function showTableCenter() {
     bgBlue.css({
       left: '-50%',
       top: '50%'
     })
   }
-  function stop(id) {
-    soundManager.stop(id);
+
+  function stop() {
+    soundManager.stopAll();
   }
 
   function pause(id) {
@@ -351,7 +384,7 @@ $(document).ready(function () {
   }
 
   function play(id) {
-    stop(id);
+    stop();
     soundManager.play(id);
   }
 
@@ -363,7 +396,6 @@ $(document).ready(function () {
   }
 
   glossaryBtn.click(function () {
-
     if (glossary.hasClass('hide') || glossary.hasClass('fadeOutDown')) {
       glossary.removeClass('hide').addClass('animated fadeInUp').removeClass('fadeOutDown');
     } else {
@@ -371,23 +403,15 @@ $(document).ready(function () {
     }
   });
   homeBtn.click(function () {
-    stop(idPart1Lesson1);
-    setDefaultTable();
-    setDefaultSentence();
-    changeScreen(3);
-    showRightSidebar();
+    nextpart(1);
   });
   skip.click(function () {
-    stop(idIntro);
-    setDefaultTable();
-    setDefaultSentence();
     skip.hide();
-//    changeScreen(3);
     changeTvbg(1);
-//    showRightSidebar();
-    nextpart();
+    nextpart(1);
     control.removeClass('hide');
   });
+  
   glossary.find('.list-short-text li').click(function () {
     var id = '#tab-' + $(this).data('tab');
     if ($(this).hasClass('deactive')) {
