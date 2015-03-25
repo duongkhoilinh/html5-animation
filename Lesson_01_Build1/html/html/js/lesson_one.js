@@ -99,10 +99,10 @@ $(document).ready(function () {
             {time: 0, callback: section.bind({index: 0, screen: 0, where: introClass})},
             {time: 11200, callback: section.bind({index: 1, screen: 0, where: introClass})},
             {time: 21000, callback: section.bind({index: 2, screen: 0, where: introClass})},
-      {time: 26000, callback: sectionTable.bind({index: 0, screen: 0, where: introClass})},
-      {time: 29000, callback: sectionTable.bind({index: 1, screen: 0, where: introClass})},
-      {time: 32000, callback: sectionTable.bind({index: 2, screen: 0, where: introClass})},
-      {time: 40000, callback: sectionTable.bind({index: 3, screen: 0, where: introClass})},
+            {time: 26000, callback: sectionTable.bind({index: 0, screen: 0, where: introClass})},
+            {time: 29000, callback: sectionTable.bind({index: 1, screen: 0, where: introClass})},
+            {time: 32000, callback: sectionTable.bind({index: 2, screen: 0, where: introClass})},
+            {time: 40000, callback: sectionTable.bind({index: 3, screen: 0, where: introClass})},
             {time: 45000, callback: section.bind({index: 3, screen: 1, where: introClass})},
             {time: 52500, callback: section.bind({index: 4, screen: 1, where: introClass})},
             {time: 54500, callback: section.bind({index: 5, screen: 2, where: introClass})},
@@ -117,32 +117,32 @@ $(document).ready(function () {
 
     });
     function part1Lesson1Play() {
-    changeScreen(3);
-    bgBlue.css({
-      left: 0
-    });
-    setTimeout(function () {
-      soundManager.onready(function () {
-        soundManager.play(idPart1Lesson1, {
-          multiShot: true,
-          position: 0
+        changeScreen(3);
+        bgBlue.css({
+            left: 0
         });
-        var introEvent = [
-          {time: 0, callback: section.bind({index: 0, screen: 3, where: part1Class})},
-          {time: 6000, callback: sectionTable.bind({index: 0, screen: 3, where: part1Class})},
-          {time: 9000, callback: sectionTable.bind({index: 1, screen: 3, where: part1Class})},
-          {time: 13000, callback: sectionTable.bind({index: 2, screen: 3, where: part1Class})},
-          {time: 16000, callback: hideRightSidebar},
-          {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
-          {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
-          {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
-          {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
-        ];
-        introEvent.forEach(function (el) {
-          soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
-        });
-      });
-    }, 1300);
+        setTimeout(function () {
+            soundManager.onready(function () {
+                soundManager.play(idPart1Lesson1, {
+                    multiShot: true,
+                    position: 0
+                });
+                var introEvent = [
+                    {time: 0, callback: section.bind({index: 0, screen: 3, where: part1Class})},
+                    {time: 6000, callback: sectionTable.bind({index: 0, screen: 3, where: part1Class})},
+                    {time: 9000, callback: sectionTable.bind({index: 1, screen: 3, where: part1Class})},
+                    {time: 13000, callback: sectionTable.bind({index: 2, screen: 3, where: part1Class})},
+                    {time: 16000, callback: hideRightSidebar},
+                    {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
+                    {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
+                    {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
+                    {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
+                ];
+                introEvent.forEach(function (el) {
+                    soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
+                });
+            });
+        }, 1300);
     }
 
     function part2Lesson1Play() {
@@ -213,7 +213,7 @@ $(document).ready(function () {
             });
             var introEvent = [
                 {time: 0, callback: section.bind({index: 0, screen: 2, where: part5Class})}
-      ];
+            ];
             introEvent.forEach(function (el) {
                 soundManager.onPosition(idPart5Lesson1, el.time, el.callback);
             });
@@ -229,12 +229,12 @@ $(document).ready(function () {
             });
             var introEvent = [
 //        {time: 0, callback: section.bind({index: 0, screen: 4, where: part6Class})},
-        {time: 0, callback: sectionTable.bind({index: 0, screen: 4, where: part6Class})},
-        {time: 22860, callback: sectionTable.bind({index: 1, screen: 4, where: part6Class})},
-        {time: 36530, callback: sectionTable.bind({index: 2, screen: 4, where: part6Class})},
-        {time: 53300, callback: sectionTable.bind({index: 3, screen: 4, where: part6Class})},
-        {time: 100000, callback: sectionTable.bind({index: 4, screen: 4, where: part6Class})},
-        {time: 0, callback: sectionTable.bind({index: 5, screen: 4, where: part6Class})}
+                {time: 0, callback: sectionTable.bind({index: 0, screen: 4, where: part6Class})},
+                {time: 22860, callback: sectionTable.bind({index: 1, screen: 4, where: part6Class})},
+                {time: 36530, callback: sectionTable.bind({index: 2, screen: 4, where: part6Class})},
+                {time: 53300, callback: sectionTable.bind({index: 3, screen: 4, where: part6Class})},
+                {time: 100000, callback: sectionTable.bind({index: 4, screen: 4, where: part6Class})},
+                {time: 0, callback: sectionTable.bind({index: 5, screen: 4, where: part6Class})}
             ];
             introEvent.forEach(function (el) {
                 soundManager.onPosition(idPart6Lesson1, el.time, el.callback);
@@ -269,35 +269,34 @@ $(document).ready(function () {
         });
     }
 
-  function nextpart(numberPart) {
-    stop();
-    setDefaultTable();
-    setDefaultSentence();
-    switch (numberPart) {
-      case 1 :
-        showRightSidebar();
-        break;
-      case 2 :
-        part2Lesson1Play();
-        break;
-      case 3 :
-        part3Lesson1Play();
-        break;
-      case 4 :
-        part4Lesson1Play();
-        break;
-      case 5:
-        part5Lesson1Play();
-        break;
-      case 6:
-        part6Lesson1Play();
-        break;
-      case 7 :
-        part7Lesson1Play();
-        break;
+    function nextpart(numberPart) {
+        stop();
+        setDefaultTable();
+        setDefaultSentence();
+        switch (numberPart) {
+            case 1 :
+                showRightSidebar();
+                break;
+            case 2 :
+                part2Lesson1Play();
+                break;
+            case 3 :
+                part3Lesson1Play();
+                break;
+            case 4 :
+                part4Lesson1Play();
+                break;
+            case 5:
+                part5Lesson1Play();
+                break;
+            case 6:
+                part6Lesson1Play();
+                break;
+            case 7 :
+                part7Lesson1Play();
+                break;
+        }
     }
-
-  }
 
     function setDefaultSentence() {
         sentence.addClass('hide');
@@ -388,8 +387,8 @@ $(document).ready(function () {
         bgBlueZoomIn.addClass('zoomOut');
     }
 
-  function stop() {
-    soundManager.stopAll();
+    function stop() {
+        soundManager.stopAll();
     }
 
     function pause(id) {
@@ -397,7 +396,7 @@ $(document).ready(function () {
     }
 
     function play(id) {
-    stop();
+        stop();
         soundManager.play(id);
     }
 
@@ -416,7 +415,7 @@ $(document).ready(function () {
         }
     });
     homeBtn.click(function () {
-    	nextpart(1);
+        nextpart(1);
     });
     skip.click(function () {
         stop(idIntro);
@@ -424,10 +423,10 @@ $(document).ready(function () {
         setDefaultSentence();
         skip.hide();
         changeTvbg(1);
-    nextpart(1);
+        nextpart(3);
         control.removeClass('hide');
     });
-  
+
     glossary.find('.list-short-text li').click(function () {
         var id = '#tab-' + $(this).data('tab');
         if ($(this).hasClass('deactive')) {
