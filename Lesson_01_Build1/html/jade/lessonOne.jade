@@ -10,15 +10,15 @@ block main
             li: a#menu-home(href="javascript:;") Home
             li: a(href="javascript:;") Transcript
             li: a#menu-glossary(href="javascript:;") Glossary
-            li: a#btn-play(href="javascript:;")
             li: a#btn-pause(href="javascript:;")
+            //li: a#btn-pause(href="javascript:;")
             li: a#btn-back(href="javascript:;")
             li#parts-list
               span Page &nbsp;
-              span.part-current 01
+              span#part-current 01
               span &nbsp; of &nbsp;
               span.parts-all 09
-            li: a#btn-next(href="javascript:;")
+            li: a#btn-next
           #transcript.panel-fla.hide
             .title-panel
               h1 Transcript
@@ -187,7 +187,7 @@ block main
                 p(data-top='240px' data-right='250px') It feel absolutely great. Looking back, the journey that I began a few years ago means a lot of me.
                 p(data-top='240px' data-right='350px') Ok, Please tell us about this journey of yours. How did you get start on this business?
                 p(data-top='240px' data-right='250px') To answer your question, I will have to take you ten years back, when i deciding on a business.
-              div.part1
+              div.part1.active
                 p(data-top='160px' data-right='150px') Before we move on, let me tell our viewers what are going to discuss in this segment.
                 p(data-top='260px' data-left='150px') Yes Mr. For tell us about your journey to this point in time.
                 p(data-top='230px' data-right='200px' data-width='250px') Initilly when I thoungt about starting a new business I encountered many question, such as :
@@ -224,13 +224,13 @@ block main
                 p(data-top='210px' data-right='260px') Once you are decided what business you want to start, the most important thing is planning and preparation.
                 p(data-top='210px' data-right='260px') As you can see Ms. James, I still have those do's and don'ts written here on this board.
               div.part8
-                p(data-top='200px' data-left='300px') Those are indeed important points and one should always consider them not only at the initial stage of busness but throughout one's professional life.
-                p(data-top='230px' data-left='350px') Yes, always.
-                p(data-top='200px' data-left='300px') Once you finish going through the detailed evaluation procedure, make sure that you are ready to face this new challenge in your life.
-                p(data-top='230px' data-left='350px') Your preparation doesn't end till you get completely qualified.
-                p(data-top='200px' data-left='300px') What do you mean by conpletely qualified?
-                p(data-top='230px' data-left='350px') When I say completely qualified that does not mean only academically.
-                p(data-top='200px' data-left='300px') Before we move to our last segment, let's have another quick quiz.
+                p(data-top='250px' data-left='200px') Those are indeed important points and one should always consider them not only at the initial stage of busness but throughout one's professional life.
+                p(data-top='210px' data-right='260px') Yes, always.
+                p(data-top='250px' data-left='200px') Once you finish going through the detailed evaluation procedure, make sure that you are ready to face this new challenge in your life.
+                p(data-top='210px' data-right='260px') Your preparation doesn't end till you get completely qualified.
+                p(data-top='250px' data-left='200px') What do you mean by conpletely qualified?
+                p(data-top='210px' data-right='260px') When I say completely qualified that does not mean only academically.
+                p(data-top='250px' data-left='200px') Before we move to our last segment, let's have another quick quiz.
               div.part9
                 p(data-top='0' data-left='0') Two years ago, Ann passed her BMA majoring in Human Resources. She didn't want to work elsewhere, so shw decided to start her own hiring agency. Two years after starting her own company, she was still unable to cope with her day to day business demands.
                 p(data-top='40px' data-left='0') What could Ann have done to increase her changes of success in her business venture?
