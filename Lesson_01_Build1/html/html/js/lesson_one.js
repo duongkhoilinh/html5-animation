@@ -394,7 +394,17 @@ $(document).ready(function () {
     function pause(id) {
         soundManager.pause(id);
     }
-
+    $('#btn-play').hide()
+    $('#btn-pause').click(function(){
+      $(this).hide();
+      $('#btn-play').show();
+      pause(idPart1Lesson1);
+    })
+    $('#btn-play').click(function(){
+      $(this).hide();
+      $('#btn-pause').show();
+      play(idPart1Lesson1);
+    })
     function play(id) {
         stop();
         soundManager.play(id);
@@ -423,7 +433,7 @@ $(document).ready(function () {
         setDefaultSentence();
         skip.hide();
         changeTvbg(1);
-        nextpart(3);
+        nextpart(1);
         control.removeClass('hide');
     });
 
