@@ -540,17 +540,17 @@ ul#menu {
   ul#menu #parts-list {
     background: #7a7a7a;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
+    background: -moz-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a7a7a), color-stop(51%, #434247), color-stop(100%, #000000));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a7a7a), color-stop(51%, #434247), color-stop(100%, black));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
+    background: -webkit-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
+    background: -o-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
+    background: -ms-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #7a7a7a 0%, #434247 51%, #000000 100%);
+    background: linear-gradient(to bottom, #7a7a7a 0%, #434247 51%, black 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7a7a', endColorstr='#000000',GradientType=0 );
     /* IE6-9 */
@@ -654,5 +654,3 @@ body {
       /* line 42, ../../jade/scss/_home.scss */
       #mainWrapper .welcomeText img.hide {
         display: none !important; }
-
-/*# sourceMappingURL=style.css.map */
