@@ -31,7 +31,6 @@ $(document).ready(function () {
   var part7Table2 = '.part7-table2';
 
   var bgBlue = $('#background-blue');
-    var bgBlueInside = $('#background-blue .inside-box');
   var bgBlueZoomIn = $('#background-blue-zoomIn');
 
   var bgBlueIn = $('.inside-box');
@@ -138,7 +137,6 @@ $(document).ready(function () {
           {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
           {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
           {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
-                    {time: 49000, callback: section.bind({index: 5, screen: 2, where: part1Class})}
         ];
         introEvent.forEach(function (el) {
           soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
@@ -236,7 +234,7 @@ $(document).ready(function () {
         {time: 22860, callback: sectionTable.bind({index: 1, screen: 4, where: part6Class})},
         {time: 36530, callback: sectionTable.bind({index: 2, screen: 4, where: part6Class})},
         {time: 53300, callback: sectionTable.bind({index: 3, screen: 4, where: part6Class})},
-                {time: 83800, callback: sectionTable.bind({index: 4, screen: 4, where: part6Class})},
+        {time: 100000, callback: sectionTable.bind({index: 4, screen: 4, where: part6Class})},
         {time: 0, callback: sectionTable.bind({index: 5, screen: 4, where: part6Class})}
       ];
       introEvent.forEach(function (el) {
@@ -273,64 +271,35 @@ $(document).ready(function () {
   }
 
   function part8Lesson1Play() {
-        soundManager.onready(function () {
-            soundManager.play(idPart8Lesson1, {
-                multiShot: true,
-                position: 0
-            });
-            var introEvent = [
-                {time: 0, callback: section.bind({index: 0, screen: 2, where: part8Class})},
-                {time: 9800, callback: section.bind({index: 1, screen: 2, where: part8Class})},
-                {time: 12000, callback: section.bind({index: 2, screen: 2, where: part8Class})},
-                {time: 20500, callback: section.bind({index: 3, screen: 2, where: part8Class})},
-                {time: 25800, callback: section.bind({index: 4, screen: 2, where: part8Class})},
-                {time: 29900, callback: section.bind({index: 5, screen: 2, where: part8Class})},
-                {time: 34500, callback: showRightSidebar_part8},
-                {time: 36000, callback: sectionTable.bind({index: 0, screen: 2, where: part8Class})},
-                {time: 39000, callback: sectionTable.bind({index: 1, screen: 2, where: part8Class})},
-                {time: 42500, callback: sectionTable.bind({index: 2, screen: 2, where: part8Class})},
-                {time: 51500, callback: sectionTable.bind({index: 3, screen: 2, where: part8Class})},
-                {time: 56000, callback: sectionTable.bind({index: 4, screen: 2, where: part8Class})},
-                {time: 64900, callback: hideRightSidebar_part8},
-                {time: 65000, callback: section.bind({index: 6, screen: 2, where: part8Class})}
-            ];
-            introEvent.forEach(function (el) {
-                soundManager.onPosition(idPart8Lesson1, el.time, el.callback);
-            });
-        });
+    soundManager.onready(function () {
+      soundManager.play(idPart8Lesson1, {
+        multiShot: true,
+        position: 0
+      });
+      var introEvent = [
+        {time: 0, callback: section.bind({index: 0, screen: 2, where: part8Class})},
+        {time: 9800, callback: section.bind({index: 1, screen: 2, where: part8Class})},
+        {time: 12000, callback: section.bind({index: 2, screen: 2, where: part8Class})},
+        {time: 20500, callback: section.bind({index: 3, screen: 2, where: part8Class})},
+        {time: 25800, callback: section.bind({index: 4, screen: 2, where: part8Class})},
+        {time: 29900, callback: section.bind({index: 5, screen: 2, where: part8Class})},
+        {time: 34500, callback: showRightSidebar_part8},
+        {time: 36000, callback: sectionTable.bind({index: 0, screen: 2, where: part8Class})},
+        {time: 39000, callback: sectionTable.bind({index: 1, screen: 2, where: part8Class})},
+        {time: 42500, callback: sectionTable.bind({index: 2, screen: 2, where: part8Class})},
+        {time: 51500, callback: sectionTable.bind({index: 3, screen: 2, where: part8Class})},
+        {time: 56000, callback: sectionTable.bind({index: 4, screen: 2, where: part8Class})},
+        {time: 64900, callback: hideRightSidebar_part8},
+        {time: 65000, callback: section.bind({index: 6, screen: 2, where: part8Class})}
+      ];
+      introEvent.forEach(function (el) {
+        soundManager.onPosition(idPart8Lesson1, el.time, el.callback);
+      });
+    });
   }
 
-    function part9Lesson1Play() {
-        soundManager.onready(function () {
-            soundManager.play(idPart9Lesson1, {
-                multiShot: true,
-                position: 0
-            });
-            var introEvent = [
-                {time: 0, callback: sectionTable.bind({index: 0, screen: 6, where: part9Class})},
-                {time: 18500, callback: sectionTable.bind({index: 1, screen: 6, where: part9Class})},
-                {time: 23690, callback: sectionTable.bind({index: 2, screen: 6, where: part9Class})},
-                {time: 27520, callback: sectionTable.bind({index: 3, screen: 6, where: part9Class})},
-                {time: 31350, callback: sectionTable.bind({index: 4, screen: 6, where: part9Class})},
-                {time: 38380, callback: sectionTable.bind({index: 5, screen: 6, where: part9Class})},
-                {time: 40740, callback: sectionTable.bind({index: 6, screen: 6, where: part9Class})}
-            ];
-            introEvent.forEach(function (el) {
-                soundManager.onPosition(idPart9Lesson1, el.time, el.callback);
-            });
-        });
-    }
-
-    $("#btn-next").click(function (el) {
-        console.log(el);
-        var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active');
-        var number = parseInt(partCurrent.attr('class').substr(4, 1));
-        console.log(number);
-        if (number < 9) {
-            partCurrent.removeClass('active');
-            partCurrent.next().addClass('active');
-            nextpart(number + 1);
-            $('#part-current').html("0" + (number + 1));
+  function setNumberPart(part) {
+    $('#part-current').html("0" + (part));
   }
 
   var currentPlay = 1;
@@ -346,7 +315,7 @@ $(document).ready(function () {
   $("#btn-back").click(function (el) {
     currentPlay--;
     currentPlay = (currentPlay == 0)
-      ? 9
+      ? totalSection
       : currentPlay;
     nextpart(currentPlay);
     setNumberPart(currentPlay);
@@ -462,18 +431,12 @@ $(document).ready(function () {
   }
 
   function showRightSidebar_part8() {
-        bgBlueInside.css({
-            height: '300px'
-        });
     bgBlue.css({
       left: 0
     });
   }
 
   function hideRightSidebar_part8() {
-        bgBlueInside.css({
-            height: '300px'
-        });
     bgBlue.css({
       left: '-40%'
     });
