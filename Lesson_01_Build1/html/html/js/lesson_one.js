@@ -9,13 +9,13 @@ $(document).ready(function () {
   var idPart7Lesson1 = 'part7Lesson1';
   var idPart8Lesson1 = 'part8Lesson1';
   var idPart9Lesson1 = 'part9Lesson1';
+  //Calendar on part 1
+  var idPart10Lesson1 = 'part10Lesson1';
 
   var sentence = $('#show-sentence');
   var table = $('#show-in-table');
   var background = $('.background');
   var skip = $('#skip');
-  var btnPart2 = $('#part2');
-  var part1CalendarClass = $('.part1-calendar');
   var introClass = '.intro';
   var part1Class = '.part1';
   var part2Class = '.part2';
@@ -26,6 +26,10 @@ $(document).ready(function () {
   var part7Class = '.part7';
   var part8Class = '.part8';
   var part9Class = '.part9';
+  var part10Class ='.part10';
+  var part10Calendar1 = '.part1-calendar.calendar-1';
+  var part10Calendar2 = '.part1-calendar.calendar-2';
+  var part10Calendar3 = '.part1-calendar.calendar-3';
 
   var part7Table1 = '.part7-table1';
   var part7Table2 = '.part7-table2';
@@ -83,6 +87,10 @@ $(document).ready(function () {
         id: idPart9Lesson1,
         url: 'js/mp3/lesson1/p10.mp3'
       });
+      soundManager.createSound({
+        id: idPart10Lesson1,
+        url: 'js/mp3/lesson1/p1_1.mp3'
+      });
 
     },
     ontimeout: function () {
@@ -136,7 +144,8 @@ $(document).ready(function () {
           {time: 17500, callback: section.bind({index: 1, screen: 2, where: part1Class})},
           {time: 22500, callback: section.bind({index: 2, screen: 2, where: part1Class})},
           {time: 39000, callback: section.bind({index: 3, screen: 2, where: part1Class})},
-          {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})}
+          {time: 48000, callback: section.bind({index: 4, screen: 2, where: part1Class})},
+          {time: 51000, callback: section.bind({index: 5, screen: 2, where: part1Class})}
         ];
         introEvent.forEach(function (el) {
           soundManager.onPosition(idPart1Lesson1, el.time, el.callback);
@@ -229,7 +238,7 @@ $(document).ready(function () {
         position: 0
       });
       var introEvent = [
-//        {time: 0, callback: section.bind({index: 0, screen: 4, where: part6Class})},
+        //        {time: 0, callback: section.bind({index: 0, screen: 4, where: part6Class})},
         {time: 0, callback: sectionTable.bind({index: 0, screen: 4, where: part6Class})},
         {time: 22860, callback: sectionTable.bind({index: 1, screen: 4, where: part6Class})},
         {time: 36530, callback: sectionTable.bind({index: 2, screen: 4, where: part6Class})},
@@ -298,9 +307,65 @@ $(document).ready(function () {
     });
   }
 
+  function part9Lesson1Play() {
+    soundManager.onready(function () {
+      soundManager.play(idPart9Lesson1, {
+        multiShot: true,
+        position: 0
+      });
+      var introEvent = [
+        {time: 0, callback: sectionTable.bind({index: 0, screen: 6, where: part9Class})},
+        {time: 18500, callback: sectionTable.bind({index: 1, screen: 6, where: part9Class})},
+        {time: 23690, callback: sectionTable.bind({index: 2, screen: 6, where: part9Class})},
+        {time: 27520, callback: sectionTable.bind({index: 3, screen: 6, where: part9Class})},
+        {time: 31350, callback: sectionTable.bind({index: 4, screen: 6, where: part9Class})},
+        {time: 38380, callback: sectionTable.bind({index: 5, screen: 6, where: part9Class})},
+        {time: 40740, callback: sectionTable.bind({index: 6, screen: 6, where: part9Class})}
+      ];
+      introEvent.forEach(function (el) {
+        soundManager.onPosition(idPart9Lesson1, el.time, el.callback);
+      });
+    });
+  }
+
+  // Calendar on part 1
+  function part10Lesson1Play() {
+    soundManager.onready(function () {
+      soundManager.play(idPart10Lesson1, {
+        multiShot: true,
+        position: 0
+      });
+      var introEvent = [
+        {time: 0, callback: section.bind({index: 0, screen: 7, where: part10Class})},
+        {time: 12060, callback: sectionTable.bind({index: 0, screen: 8, where: part10Calendar1})},
+        {time: 16000, callback: sectionTable.bind({index: 1, screen: 8, where: part10Calendar1})},
+        {time: 21400, callback: sectionTable.bind({index: 2, screen: 8, where: part10Calendar1})},
+        {time: 29500, callback: sectionTable.bind({index: 3, screen: 8, where: part10Calendar1})},
+        {time: 34500, callback: section.bind({index: 0, screen: 7, where: part10Class})},
+        {time: 37500, callback: sectionTable.bind({index: 0, screen: 9, where: part10Calendar2})},
+        {time: 41500, callback: sectionTable.bind({index: 1, screen: 9, where: part10Calendar2})},
+        {time: 45500, callback: sectionTable.bind({index: 2, screen: 9, where: part10Calendar2})},
+        {time: 47500, callback: sectionTable.bind({index: 3, screen: 9, where: part10Calendar2})},
+        {time: 50000, callback: section.bind({index: 0, screen: 7, where: part10Class})},
+        {time: 59000, callback: sectionTable.bind({index: 0, screen: 10, where: part10Calendar3})},
+        {time: 61500, callback: sectionTable.bind({index: 1, screen: 10, where: part10Calendar3})},
+        {time: 66500, callback: sectionTable.bind({index: 2, screen: 10, where: part10Calendar3})},
+        {time: 72000, callback: sectionTable.bind({index: 3, screen: 10, where: part10Calendar3})}
+      ];
+      introEvent.forEach(function (el) {
+        soundManager.onPosition(idPart10Lesson1, el.time, el.callback);
+      });
+    });
+  }
+
+  $('#btn-calendar').click(function(){
+    part10Lesson1Play();
+  });
+
   function setNumberPart(part) {
     $('#part-current').html("0" + (part));
   }
+
 
   var currentPlay = 1;
   var totalSection = 9;
@@ -320,16 +385,16 @@ $(document).ready(function () {
     nextpart(currentPlay);
     setNumberPart(currentPlay);
   });
-//      console.log(el);
-//      var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active');
-//      var number = parseInt(partCurrent.attr('class').substr(4,1));
-//      console.log(number);
-//      if(number>1) {
-//        partCurrent.removeClass('active');
-//        partCurrent.prev().addClass('active');
-//        nextpart(number-1);
-//        $('#part-current').html("0"+(number-1));
-//      }
+  //      console.log(el);
+  //      var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active');
+  //      var number = parseInt(partCurrent.attr('class').substr(4,1));
+  //      console.log(number);
+  //      if(number>1) {
+  //        partCurrent.removeClass('active');
+  //        partCurrent.prev().addClass('active');
+  //        nextpart(number-1);
+  //        $('#part-current').html("0"+(number-1));
+  //      }
 
   function nextpart(numberPart) {
     stop();
@@ -474,12 +539,14 @@ $(document).ready(function () {
   function play(id) {
     soundManager.togglePause(id);
   }
+
   function mute(id) {
     soundManager.toggleMute(id);
   }
-  $('#btn-mute').click(function(el){
+
+  $('#btn-mute').click(function (el) {
     var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active').attr('class');
-    var number = parseInt(partCurrent.substr(4, 1));
+    var number = parseInt(partCurrent.substr(4, 2));
     switch (number) {
       case 1 :
         mute(idPart1Lesson1);
@@ -508,12 +575,15 @@ $(document).ready(function () {
       case 9 :
         mute(idPart9Lesson1);
         break;
+      case 10 :
+        mute(idPart10Lesson1);
+        break;
     }
     $(el.currentTarget).toggleClass('btn_no_mute');
   });
   $('#btn-pause').click(function (el) {
     var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active').attr('class');
-    var number = partCurrent.substr(4, 1);
+    var number = partCurrent.substr(4, 2);
     $(el.currentTarget).toggleClass('btn-play');
     switch (parseInt(number)) {
       case 1 :
@@ -543,12 +613,11 @@ $(document).ready(function () {
       case 9 :
         play(idPart9Lesson1);
         break;
+      case 10 :
+        play(idPart10Lesson1);
+        break;
     }
   });
-//    function play(id) {
-//        stop();
-//        soundManager.play(id);
-//    }
 
   function changeTvbg(index) {
     tvFrame.find('.tv').hide();
@@ -573,7 +642,10 @@ $(document).ready(function () {
     setDefaultSentence();
     skip.hide();
     changeTvbg(1);
-    nextpart(1);
+//    nextpart(1);
+    $("#show-sentence div").removeClass('active');
+    $("#show-sentence .part10").addClass('active');
+    part10Lesson1Play();
     control.removeClass('hide');
   });
 

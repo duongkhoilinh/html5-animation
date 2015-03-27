@@ -121,99 +121,103 @@ div#tv_frame {
   div#tv_frame .tv {
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     height: 100%; }
 
 /* line 47, ../../jade/scss/_lessonOne.scss */
 .background {
   position: relative;
   overflow: hidden;
-  z-index: 1; }
-  /* line 51, ../../jade/scss/_lessonOne.scss */
+  z-index: 1;
+  text-align: center; }
+  /* line 52, ../../jade/scss/_lessonOne.scss */
   .background img {
     width: 100%;
     height: 650px; }
+    /* line 55, ../../jade/scss/_lessonOne.scss */
+    .background img:nth-child(8), .background img:nth-child(9), .background img:nth-child(10), .background img:nth-child(11) {
+      width: 50%; }
 
-/* line 56, ../../jade/scss/_lessonOne.scss */
+/* line 63, ../../jade/scss/_lessonOne.scss */
 #menu-glossary {
   margin-right: 580px; }
 
-/* line 59, ../../jade/scss/_lessonOne.scss */
+/* line 66, ../../jade/scss/_lessonOne.scss */
 #parts-list li.active a {
   color: red; }
 
-/* line 63, ../../jade/scss/_lessonOne.scss */
+/* line 70, ../../jade/scss/_lessonOne.scss */
 div#show-sentence .part6 {
   opacity: 0; }
 
-/* line 67, ../../jade/scss/_lessonOne.scss */
+/* line 74, ../../jade/scss/_lessonOne.scss */
 div#show-in-table {
   font-size: 15px; }
-  /* line 68, ../../jade/scss/_lessonOne.scss */
+  /* line 75, ../../jade/scss/_lessonOne.scss */
   div#show-in-table > div {
     position: absolute; }
-  /* line 72, ../../jade/scss/_lessonOne.scss */
+  /* line 79, ../../jade/scss/_lessonOne.scss */
   div#show-in-table p {
     line-height: 22px;
     margin-bottom: 19px; }
-    /* line 75, ../../jade/scss/_lessonOne.scss */
+    /* line 82, ../../jade/scss/_lessonOne.scss */
     div#show-in-table p:first-child {
       font-weight: 800;
       margin-bottom: 12px; }
-  /* line 80, ../../jade/scss/_lessonOne.scss */
+  /* line 87, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .intro {
     top: 205px;
     left: 218px;
     width: 360px; }
-  /* line 85, ../../jade/scss/_lessonOne.scss */
+  /* line 92, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part1 {
     top: 200px;
     left: 59px;
     color: white; }
-  /* line 90, ../../jade/scss/_lessonOne.scss */
+  /* line 97, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part6 {
     color: black;
     font-size: 17px;
     top: 0;
     left: 0; }
-    /* line 95, ../../jade/scss/_lessonOne.scss */
+    /* line 102, ../../jade/scss/_lessonOne.scss */
     div#show-in-table .part6 p {
       position: relative; }
-      /* line 97, ../../jade/scss/_lessonOne.scss */
+      /* line 104, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p span {
         display: block;
         margin-left: 20px; }
-      /* line 101, ../../jade/scss/_lessonOne.scss */
+      /* line 108, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(1) {
         top: 114px;
         left: 26px;
         width: 90%; }
-      /* line 106, ../../jade/scss/_lessonOne.scss */
+      /* line 113, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(2) {
         top: 130px;
         left: 340px;
         width: 64%; }
-      /* line 111, ../../jade/scss/_lessonOne.scss */
+      /* line 118, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(3) {
         top: 130px;
         left: 340px;
         width: 64%; }
-      /* line 116, ../../jade/scss/_lessonOne.scss */
+      /* line 123, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(4) {
         top: 130px;
         left: 340px;
         width: 64%; }
-      /* line 121, ../../jade/scss/_lessonOne.scss */
+      /* line 128, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(5) {
         top: 180px;
         left: 40px;
         width: 64%; }
-      /* line 126, ../../jade/scss/_lessonOne.scss */
+      /* line 133, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part6 p:nth-child(6) {
         top: 180px;
         left: 40px;
         width: 100%; }
-  /* line 134, ../../jade/scss/_lessonOne.scss */
+  /* line 141, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part7-table1 {
     top: 13%;
     left: 2%;
@@ -221,115 +225,129 @@ div#show-in-table {
     width: 95%;
     height: 80%;
     border-radius: 10px; }
-    /* line 143, ../../jade/scss/_lessonOne.scss */
+    /* line 150, ../../jade/scss/_lessonOne.scss */
     div#show-in-table .part7-table1 p {
       display: inline-block;
       position: relative; }
-      /* line 147, ../../jade/scss/_lessonOne.scss */
+      /* line 154, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table1 p:nth-child(1) {
         top: 152px;
         left: 29%;
         font-size: 18px; }
-      /* line 152, ../../jade/scss/_lessonOne.scss */
+      /* line 159, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table1 p:nth-child(2) {
         top: 152px;
         left: 31%;
         font-size: 18px;
         width: 34%;
         display: block; }
-      /* line 159, ../../jade/scss/_lessonOne.scss */
+      /* line 166, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table1 p:nth-child(3) {
         top: 152px;
         left: 31%;
         font-size: 18px; }
-      /* line 164, ../../jade/scss/_lessonOne.scss */
+      /* line 171, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table1 p:nth-child(4) {
         top: 152px;
         left: 31%;
         font-size: 18px;
         width: 32%;
         display: block; }
-  /* line 173, ../../jade/scss/_lessonOne.scss */
+  /* line 180, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part7-table2 {
     top: 0;
     left: 0;
     width: 100%; }
-    /* line 177, ../../jade/scss/_lessonOne.scss */
+    /* line 184, ../../jade/scss/_lessonOne.scss */
     div#show-in-table .part7-table2 p {
       position: relative; }
-      /* line 179, ../../jade/scss/_lessonOne.scss */
+      /* line 186, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table2 p span {
         display: block;
         margin-left: 20px; }
-      /* line 183, ../../jade/scss/_lessonOne.scss */
+      /* line 190, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table2 p:nth-child(1) {
         top: 62px;
         left: 5%;
         width: 90%; }
-      /* line 188, ../../jade/scss/_lessonOne.scss */
+      /* line 195, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table2 p:nth-child(2) {
         top: 100px;
         left: 40px;
         width: 40%; }
-      /* line 193, ../../jade/scss/_lessonOne.scss */
+      /* line 200, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part7-table2 p:nth-child(3) {
         top: -236px;
         left: 52%;
         width: 40%; }
-  /* line 200, ../../jade/scss/_lessonOne.scss */
+  /* line 207, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part8 {
     top: 200px;
     left: 70px;
     color: white; }
-    /* line 204, ../../jade/scss/_lessonOne.scss */
+    /* line 211, ../../jade/scss/_lessonOne.scss */
     div#show-in-table .part8 p {
       width: 50%; }
-  /* line 208, ../../jade/scss/_lessonOne.scss */
+  /* line 215, ../../jade/scss/_lessonOne.scss */
   div#show-in-table .part9 {
     color: black;
     font-size: 17px;
     top: 0;
     left: 0; }
-    /* line 213, ../../jade/scss/_lessonOne.scss */
+    /* line 220, ../../jade/scss/_lessonOne.scss */
     div#show-in-table .part9 p {
       position: relative; }
-      /* line 215, ../../jade/scss/_lessonOne.scss */
+      /* line 222, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(1) {
         top: 114px;
         left: 26px;
         width: 90%; }
-      /* line 220, ../../jade/scss/_lessonOne.scss */
+      /* line 227, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(2) {
         top: 120px;
         left: 26px;
         width: 90%;
         font-weight: 800; }
-      /* line 226, ../../jade/scss/_lessonOne.scss */
+      /* line 233, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(3) {
         top: 150px;
         left: 340px;
         width: 64%; }
-      /* line 231, ../../jade/scss/_lessonOne.scss */
+      /* line 238, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(4) {
         top: 150px;
         left: 340px;
         width: 64%; }
-      /* line 236, ../../jade/scss/_lessonOne.scss */
+      /* line 243, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(5) {
         top: 150px;
         left: 340px;
         width: 64%; }
-      /* line 241, ../../jade/scss/_lessonOne.scss */
+      /* line 248, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(6) {
         top: 150px;
         left: 340px;
         width: 100%; }
-      /* line 246, ../../jade/scss/_lessonOne.scss */
+      /* line 253, ../../jade/scss/_lessonOne.scss */
       div#show-in-table .part9 p:nth-child(7) {
         top: 310px;
         left: 30px;
         width: 100%; }
-  /* line 253, ../../jade/scss/_lessonOne.scss */
+  /* line 260, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table .part1-calendar.calendar-1,
+  div#show-in-table .part1-calendar.calendar-2,
+  div#show-in-table .part1-calendar.calendar-3 {
+    top: 200px;
+    left: 30%;
+    width: 40%;
+    text-align: left; }
+  /* line 269, ../../jade/scss/_lessonOne.scss */
+  div#show-in-table .part1-calendar.calendar-3 p:last-child {
+    position: relative;
+    top: 239px;
+    left: -14px;
+    color: red; }
+  /* line 276, ../../jade/scss/_lessonOne.scss */
   div#show-in-table #btn-submit-part6 {
     background: url("img/submit.png") no-repeat;
     height: 57px;
@@ -340,11 +358,11 @@ div#show-in-table {
     top: 597px;
     left: 950px;
     margin: 0; }
-    /* line 263, ../../jade/scss/_lessonOne.scss */
+    /* line 286, ../../jade/scss/_lessonOne.scss */
     div#show-in-table #btn-submit-part6:hover {
       background: url("img/submit_hover.png") no-repeat; }
 
-/* line 269, ../../jade/scss/_lessonOne.scss */
+/* line 292, ../../jade/scss/_lessonOne.scss */
 div#skip {
   background: url("img/btn_skip_intro.png") no-repeat;
   height: 35px;
@@ -353,15 +371,15 @@ div#skip {
   bottom: 0;
   cursor: pointer;
   z-index: 2; }
-  /* line 277, ../../jade/scss/_lessonOne.scss */
+  /* line 300, ../../jade/scss/_lessonOne.scss */
   div#skip:hover {
     background: url("img/btn_skip_intro_hover.png") no-repeat; }
 
-/* line 282, ../../jade/scss/_lessonOne.scss */
+/* line 305, ../../jade/scss/_lessonOne.scss */
 div#click-redx {
   position: absolute; }
 
-/* line 286, ../../jade/scss/_lessonOne.scss */
+/* line 309, ../../jade/scss/_lessonOne.scss */
 div#background-blue {
   transition: 1s all ease-in-out;
   position: absolute;
@@ -370,7 +388,7 @@ div#background-blue {
   width: 40%;
   height: 100%;
   background: rgba(15, 116, 213, 0.7); }
-  /* line 294, ../../jade/scss/_lessonOne.scss */
+  /* line 317, ../../jade/scss/_lessonOne.scss */
   div#background-blue .inside-box {
     height: 200px;
     width: 80%;
@@ -381,7 +399,7 @@ div#background-blue {
     border-radius: 20px;
     border: 2px solid #0f3658; }
 
-/* line 305, ../../jade/scss/_lessonOne.scss */
+/* line 328, ../../jade/scss/_lessonOne.scss */
 div#background-blue-zoomIn {
   position: absolute;
   top: 0;
@@ -391,7 +409,7 @@ div#background-blue-zoomIn {
   background: rgba(15, 116, 213, 0.7);
   border-radius: 10px; }
 
-/* line 314, ../../jade/scss/_lessonOne.scss */
+/* line 337, ../../jade/scss/_lessonOne.scss */
 div#control {
   /* position: absolute; */
   /* z-index: 3; */
@@ -399,11 +417,11 @@ div#control {
   /* bottom: 0; */
   /* background: #fff; */ }
 
-/* line 322, ../../jade/scss/_lessonOne.scss */
+/* line 345, ../../jade/scss/_lessonOne.scss */
 ul#menu li {
   display: inline-block; }
 
-/* line 326, ../../jade/scss/_lessonOne.scss */
+/* line 349, ../../jade/scss/_lessonOne.scss */
 .panel-fla {
   position: absolute;
   background: white;
@@ -411,61 +429,61 @@ ul#menu li {
   border-radius: 10px;
   box-sizing: border-box;
   overflow: scroll; }
-  /* line 333, ../../jade/scss/_lessonOne.scss */
+  /* line 356, ../../jade/scss/_lessonOne.scss */
   .panel-fla .title-panel {
     background: #131313;
     padding: 5px;
     border-radius: 4px;
     color: #fff;
     margin: 2px 0; }
-  /* line 340, ../../jade/scss/_lessonOne.scss */
+  /* line 363, ../../jade/scss/_lessonOne.scss */
   .panel-fla .content-panel {
     background: #7ec8f7;
     padding: 6px;
     border-radius: 5px; }
 
-/* line 347, ../../jade/scss/_lessonOne.scss */
+/* line 370, ../../jade/scss/_lessonOne.scss */
 div#transcript {
   z-index: 3;
   bottom: 260px;
   width: 300px;
   height: 200px;
   right: 43px; }
-  /* line 353, ../../jade/scss/_lessonOne.scss */
+  /* line 376, ../../jade/scss/_lessonOne.scss */
   div#transcript .content-panel {
     height: 200px; }
 
-/* line 358, ../../jade/scss/_lessonOne.scss */
+/* line 381, ../../jade/scss/_lessonOne.scss */
 div#glossary {
   z-index: 4;
   width: 80%;
   bottom: 83px;
   left: 47px; }
-  /* line 363, ../../jade/scss/_lessonOne.scss */
+  /* line 386, ../../jade/scss/_lessonOne.scss */
   div#glossary .content-panel {
     height: 300px; }
 
-/* line 368, ../../jade/scss/_lessonOne.scss */
+/* line 391, ../../jade/scss/_lessonOne.scss */
 ul#menu {
   position: absolute;
   bottom: 15px;
   z-index: 5;
   left: 65px; }
-  /* line 373, ../../jade/scss/_lessonOne.scss */
+  /* line 396, ../../jade/scss/_lessonOne.scss */
   ul#menu li {
     cursor: pointer;
     padding-right: 10px; }
-  /* line 377, ../../jade/scss/_lessonOne.scss */
+  /* line 400, ../../jade/scss/_lessonOne.scss */
   ul#menu a {
     padding: 10px 10px 41px 10px;
     display: inline-block;
     text-decoration: none;
     color: #000;
     cursor: pointer; }
-    /* line 383, ../../jade/scss/_lessonOne.scss */
+    /* line 406, ../../jade/scss/_lessonOne.scss */
     ul#menu a:hover {
       color: #028dbd; }
-  /* line 387, ../../jade/scss/_lessonOne.scss */
+  /* line 410, ../../jade/scss/_lessonOne.scss */
   ul#menu [id*=btn-] {
     width: 13px;
     height: 0;
@@ -474,10 +492,10 @@ ul#menu {
     padding: 0;
     position: relative;
     top: 3px; }
-    /* line 396, ../../jade/scss/_lessonOne.scss */
+    /* line 419, ../../jade/scss/_lessonOne.scss */
     ul#menu [id*=btn-]:hover:before {
       background: #028dbd; }
-    /* line 400, ../../jade/scss/_lessonOne.scss */
+    /* line 423, ../../jade/scss/_lessonOne.scss */
     ul#menu [id*=btn-]:before {
       position: absolute;
       content: "";
@@ -485,25 +503,25 @@ ul#menu {
       background: black;
       top: -10px;
       height: 20px; }
-  /* line 409, ../../jade/scss/_lessonOne.scss */
+  /* line 432, ../../jade/scss/_lessonOne.scss */
   ul#menu #btn-back {
     border-right: 14px solid #080809; }
-    /* line 411, ../../jade/scss/_lessonOne.scss */
+    /* line 434, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-back:hover {
       border-right: 14px solid #028dbd; }
-    /* line 414, ../../jade/scss/_lessonOne.scss */
+    /* line 437, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-back:before {
       right: -21px; }
-  /* line 418, ../../jade/scss/_lessonOne.scss */
+  /* line 441, ../../jade/scss/_lessonOne.scss */
   ul#menu #btn-next {
     border-left: 14px solid #080809; }
-    /* line 420, ../../jade/scss/_lessonOne.scss */
+    /* line 443, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-next:hover {
       border-left: 14px solid #028dbd; }
-    /* line 423, ../../jade/scss/_lessonOne.scss */
+    /* line 446, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-next:before {
       left: -21px; }
-  /* line 427, ../../jade/scss/_lessonOne.scss */
+  /* line 450, ../../jade/scss/_lessonOne.scss */
   ul#menu #btn-pause {
     height: 0px;
     background: #000;
@@ -511,13 +529,13 @@ ul#menu {
     position: absolute;
     top: 5px;
     right: 238px; }
-    /* line 434, ../../jade/scss/_lessonOne.scss */
+    /* line 457, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-pause:hover {
       background: #028dbd; }
-    /* line 437, ../../jade/scss/_lessonOne.scss */
+    /* line 460, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-pause:before {
       right: -7px; }
-    /* line 440, ../../jade/scss/_lessonOne.scss */
+    /* line 463, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-pause.btn-play {
       width: 13px;
       height: 0;
@@ -530,13 +548,13 @@ ul#menu {
       top: 5px;
       background: none;
       right: 215px; }
-      /* line 452, ../../jade/scss/_lessonOne.scss */
+      /* line 475, ../../jade/scss/_lessonOne.scss */
       ul#menu #btn-pause.btn-play:hover {
         border-left: 14px solid #028dbd; }
-      /* line 455, ../../jade/scss/_lessonOne.scss */
+      /* line 478, ../../jade/scss/_lessonOne.scss */
       ul#menu #btn-pause.btn-play:before {
         display: none; }
-  /* line 460, ../../jade/scss/_lessonOne.scss */
+  /* line 483, ../../jade/scss/_lessonOne.scss */
   ul#menu #parts-list {
     background: #7a7a7a;
     /* Old browsers */
@@ -561,7 +579,7 @@ ul#menu {
     margin: 0 14px;
     font-size: 14px;
     border: 1px solid #000; }
-  /* line 477, ../../jade/scss/_lessonOne.scss */
+  /* line 500, ../../jade/scss/_lessonOne.scss */
   ul#menu #btn-mute {
     background: url("img/btn_mute.png") no-repeat;
     height: 26px;
@@ -574,13 +592,13 @@ ul#menu {
     right: 430px;
     display: block;
     background-size: 70%; }
-    /* line 489, ../../jade/scss/_lessonOne.scss */
+    /* line 512, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-mute:hover {
       background: url("img/btn_mute_hover.png") no-repeat;
       background-size: 70%;
       height: 26px;
       width: 36px; }
-    /* line 495, ../../jade/scss/_lessonOne.scss */
+    /* line 518, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-mute.btn_no_mute {
       background: url("img/btn_no_mute.png") no-repeat;
       height: 26px;
@@ -593,42 +611,42 @@ ul#menu {
       right: 430px;
       display: block;
       background-size: 81%; }
-      /* line 507, ../../jade/scss/_lessonOne.scss */
+      /* line 530, ../../jade/scss/_lessonOne.scss */
       ul#menu #btn-mute.btn_no_mute:hover {
         background: url("img/btn_no_mute_hover.png") no-repeat;
         height: 26px;
         width: 36px;
         background-size: 81%; }
-    /* line 514, ../../jade/scss/_lessonOne.scss */
+    /* line 537, ../../jade/scss/_lessonOne.scss */
     ul#menu #btn-mute:before {
       display: none; }
-  /* line 518, ../../jade/scss/_lessonOne.scss */
+  /* line 541, ../../jade/scss/_lessonOne.scss */
   ul#menu #slide {
     position: absolute;
     top: -4px;
     right: 261px; }
 
-/* line 525, ../../jade/scss/_lessonOne.scss */
+/* line 548, ../../jade/scss/_lessonOne.scss */
 ul.list-short-text {
   background: #2393dd;
   padding: 6px 20px;
   color: #fff;
   border-radius: 4px;
   margin-bottom: 5px; }
-  /* line 531, ../../jade/scss/_lessonOne.scss */
+  /* line 554, ../../jade/scss/_lessonOne.scss */
   ul.list-short-text li {
     display: inline-block;
     padding: 0 5px 0 2px;
     cursor: pointer;
     border-right: 1px solid #ccc; }
-  /* line 537, ../../jade/scss/_lessonOne.scss */
+  /* line 560, ../../jade/scss/_lessonOne.scss */
   ul.list-short-text li.deactive {
     color: #ccc; }
 
-/* line 543, ../../jade/scss/_lessonOne.scss */
+/* line 566, ../../jade/scss/_lessonOne.scss */
 ul.content-list-short-text li.active {
   display: block; }
-/* line 547, ../../jade/scss/_lessonOne.scss */
+/* line 570, ../../jade/scss/_lessonOne.scss */
 ul.content-list-short-text li {
   display: none;
   height: 243px;
@@ -637,16 +655,16 @@ ul.content-list-short-text li {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #143E7C; }
-  /* line 555, ../../jade/scss/_lessonOne.scss */
+  /* line 578, ../../jade/scss/_lessonOne.scss */
   ul.content-list-short-text li p {
     line-height: 19px;
     margin-bottom: 10px; }
-    /* line 558, ../../jade/scss/_lessonOne.scss */
+    /* line 581, ../../jade/scss/_lessonOne.scss */
     ul.content-list-short-text li p b {
       font-weight: 800; }
 
-/* line 566, ../../jade/scss/_lessonOne.scss */
-#calendar {
+/* line 589, ../../jade/scss/_lessonOne.scss */
+#btn-calendar {
   top: 549px;
   height: 50px;
   width: 50px;
