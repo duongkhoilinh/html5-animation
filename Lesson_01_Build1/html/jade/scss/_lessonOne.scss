@@ -474,6 +474,52 @@ ul#menu {
     font-size: 14px;
     border: 1px solid #000;
   }
+  #btn-mute {
+    background: url("img/btn_mute.png") no-repeat;
+    height: 26px;
+    width: 36px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 2;
+    top: -8px;
+    right: 430px;
+    display: block;
+    background-size: 70%;
+    &:hover {
+      background: url("img/btn_mute_hover.png") no-repeat;
+      background-size: 70%;
+      height: 26px;
+      width: 36px;
+    }
+    &.btn_no_mute {
+      background: url("img/btn_no_mute.png") no-repeat;
+      height: 26px;
+      width: 36px;
+      position: absolute;
+      bottom: 0;
+      cursor: pointer;
+      z-index: 2;
+      top: -6px;
+      right: 430px;
+      display: block;
+      background-size: 81%;
+      &:hover {
+        background: url("img/btn_no_mute_hover.png") no-repeat;
+        height: 26px;
+        width: 36px;
+        background-size: 81%;
+      }
+    }
+    &:before {
+      display: none;
+    }
+  }
+  #slide {
+    position: absolute;
+    top: -4px;
+    right: 261px;
+  }
 }
 
 ul.list-short-text {

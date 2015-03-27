@@ -540,17 +540,17 @@ ul#menu {
   ul#menu #parts-list {
     background: #7a7a7a;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
+    background: -moz-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a7a7a), color-stop(51%, #434247), color-stop(100%, black));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a7a7a), color-stop(51%, #434247), color-stop(100%, #000000));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
+    background: -webkit-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
+    background: -o-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7a7a7a 0%, #434247 51%, black 100%);
+    background: -ms-linear-gradient(top, #7a7a7a 0%, #434247 51%, #000000 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #7a7a7a 0%, #434247 51%, black 100%);
+    background: linear-gradient(to bottom, #7a7a7a 0%, #434247 51%, #000000 100%);
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7a7a', endColorstr='#000000',GradientType=0 );
     /* IE6-9 */
@@ -561,28 +561,74 @@ ul#menu {
     margin: 0 14px;
     font-size: 14px;
     border: 1px solid #000; }
+  /* line 477, ../../jade/scss/_lessonOne.scss */
+  ul#menu #btn-mute {
+    background: url("img/btn_mute.png") no-repeat;
+    height: 26px;
+    width: 36px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 2;
+    top: -8px;
+    right: 430px;
+    display: block;
+    background-size: 70%; }
+    /* line 489, ../../jade/scss/_lessonOne.scss */
+    ul#menu #btn-mute:hover {
+      background: url("img/btn_mute_hover.png") no-repeat;
+      background-size: 70%;
+      height: 26px;
+      width: 36px; }
+    /* line 495, ../../jade/scss/_lessonOne.scss */
+    ul#menu #btn-mute.btn_no_mute {
+      background: url("img/btn_no_mute.png") no-repeat;
+      height: 26px;
+      width: 36px;
+      position: absolute;
+      bottom: 0;
+      cursor: pointer;
+      z-index: 2;
+      top: -6px;
+      right: 430px;
+      display: block;
+      background-size: 81%; }
+      /* line 507, ../../jade/scss/_lessonOne.scss */
+      ul#menu #btn-mute.btn_no_mute:hover {
+        background: url("img/btn_no_mute_hover.png") no-repeat;
+        height: 26px;
+        width: 36px;
+        background-size: 81%; }
+    /* line 514, ../../jade/scss/_lessonOne.scss */
+    ul#menu #btn-mute:before {
+      display: none; }
+  /* line 518, ../../jade/scss/_lessonOne.scss */
+  ul#menu #slide {
+    position: absolute;
+    top: -4px;
+    right: 261px; }
 
-/* line 479, ../../jade/scss/_lessonOne.scss */
+/* line 525, ../../jade/scss/_lessonOne.scss */
 ul.list-short-text {
   background: #2393dd;
   padding: 6px 20px;
   color: #fff;
   border-radius: 4px;
   margin-bottom: 5px; }
-  /* line 485, ../../jade/scss/_lessonOne.scss */
+  /* line 531, ../../jade/scss/_lessonOne.scss */
   ul.list-short-text li {
     display: inline-block;
     padding: 0 5px 0 2px;
     cursor: pointer;
     border-right: 1px solid #ccc; }
-  /* line 491, ../../jade/scss/_lessonOne.scss */
+  /* line 537, ../../jade/scss/_lessonOne.scss */
   ul.list-short-text li.deactive {
     color: #ccc; }
 
-/* line 497, ../../jade/scss/_lessonOne.scss */
+/* line 543, ../../jade/scss/_lessonOne.scss */
 ul.content-list-short-text li.active {
   display: block; }
-/* line 501, ../../jade/scss/_lessonOne.scss */
+/* line 547, ../../jade/scss/_lessonOne.scss */
 ul.content-list-short-text li {
   display: none;
   height: 243px;
@@ -591,15 +637,15 @@ ul.content-list-short-text li {
   padding: 10px;
   border-radius: 5px;
   border: 2px solid #143E7C; }
-  /* line 509, ../../jade/scss/_lessonOne.scss */
+  /* line 555, ../../jade/scss/_lessonOne.scss */
   ul.content-list-short-text li p {
     line-height: 19px;
     margin-bottom: 10px; }
-    /* line 512, ../../jade/scss/_lessonOne.scss */
+    /* line 558, ../../jade/scss/_lessonOne.scss */
     ul.content-list-short-text li p b {
       font-weight: 800; }
 
-/* line 520, ../../jade/scss/_lessonOne.scss */
+/* line 566, ../../jade/scss/_lessonOne.scss */
 #calendar {
   top: 549px;
   height: 50px;
@@ -654,3 +700,5 @@ body {
       /* line 42, ../../jade/scss/_home.scss */
       #mainWrapper .welcomeText img.hide {
         display: none !important; }
+
+/*# sourceMappingURL=style.css.map */

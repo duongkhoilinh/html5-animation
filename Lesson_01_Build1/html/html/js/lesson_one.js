@@ -474,7 +474,43 @@ $(document).ready(function () {
   function play(id) {
     soundManager.togglePause(id);
   }
-
+  function mute(id) {
+    soundManager.toggleMute(id);
+  }
+  $('#btn-mute').click(function(el){
+    var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active').attr('class');
+    var number = parseInt(partCurrent.substr(4, 1));
+    switch (number) {
+      case 1 :
+        mute(idPart1Lesson1);
+        break;
+      case 2 :
+        mute(idPart2Lesson1);
+        break;
+      case 3 :
+        mute(idPart3Lesson1);
+        break;
+      case 4 :
+        mute(idPart4Lesson1);
+        break;
+      case 5:
+        mute(idPart5Lesson1);
+        break;
+      case 6:
+        mute(idPart6Lesson1);
+        break;
+      case 7 :
+        mute(idPart7Lesson1);
+        break;
+      case 8 :
+        mute(idPart8Lesson1);
+        break;
+      case 9 :
+        mute(idPart9Lesson1);
+        break;
+    }
+    $(el.currentTarget).toggleClass('btn_no_mute');
+  });
   $('#btn-pause').click(function (el) {
     var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active').attr('class');
     var number = partCurrent.substr(4, 1);
