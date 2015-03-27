@@ -11,6 +11,8 @@ $(document).ready(function () {
   var idPart9Lesson1 = 'part9Lesson1';
   //Calendar on part 1
   var idPart10Lesson1 = 'part10Lesson1';
+  //Table on part 1
+  var idPart11Lesson1 = 'part11Lesson1';
 
   var sentence = $('#show-sentence');
   var table = $('#show-in-table');
@@ -87,9 +89,15 @@ $(document).ready(function () {
         id: idPart9Lesson1,
         url: 'js/mp3/lesson1/p10.mp3'
       });
+      // Sound of part 1_1
       soundManager.createSound({
         id: idPart10Lesson1,
         url: 'js/mp3/lesson1/p1_1.mp3'
+      });
+      // Sound of part 2_1
+      soundManager.createSound({
+        id: idPart11Lesson1,
+        url: 'js/mp3/lesson1/p2_1.mp3'
       });
 
     },
@@ -358,8 +366,36 @@ $(document).ready(function () {
     });
   }
 
+  //Table part 2
+  function part11Lesson1Play() {
+    soundManager.onready(function () {
+      soundManager.play(idPart11Lesson1, {
+        multiShot: true,
+        position: 0
+      });
+      var introEvent = [
+        {time: 0, callback: sectionTable.bind({index: 0, screen: 2, where: part2Class})},
+        {time: 1000, callback: sectionTable.bind({index: 1, screen: 2, where: part2Class})},
+        {time: 2000, callback: sectionTable.bind({index: 2, screen: 2, where: part2Class})},
+        {time: 3000, callback: sectionTable.bind({index: 3, screen: 2, where: part2Class})},
+        {time: 4000, callback: sectionTable.bind({index: 4, screen: 2, where: part2Class})}
+      ];
+      introEvent.forEach(function (el) {
+        soundManager.onPosition(idPart11Lesson1, el.time, el.callback);
+      });
+    });
+  }
+
   $('#btn-calendar').click(function(){
+    $("#show-sentence div").removeClass('active');
+    $("#show-sentence .part10").addClass('active');
     part10Lesson1Play();
+  });
+
+  $('#btn-table').click(function(){
+    $("#show-sentence div").removeClass('active');
+    $("#show-sentence .part11").addClass('active');
+    part11Lesson1Play();
   });
 
   function setNumberPart(part) {
@@ -369,6 +405,7 @@ $(document).ready(function () {
 
   var currentPlay = 1;
   var totalSection = 9;
+
   $("#btn-next").click(function (el) {
     currentPlay++;
     currentPlay = (currentPlay > totalSection)
@@ -377,6 +414,7 @@ $(document).ready(function () {
     nextpart(currentPlay);
     setNumberPart(currentPlay);
   });
+
   $("#btn-back").click(function (el) {
     currentPlay--;
     currentPlay = (currentPlay == 0)
@@ -385,16 +423,6 @@ $(document).ready(function () {
     nextpart(currentPlay);
     setNumberPart(currentPlay);
   });
-  //      console.log(el);
-  //      var partCurrent = $(el.currentTarget).parents().find('#show-sentence  .active');
-  //      var number = parseInt(partCurrent.attr('class').substr(4,1));
-  //      console.log(number);
-  //      if(number>1) {
-  //        partCurrent.removeClass('active');
-  //        partCurrent.prev().addClass('active');
-  //        nextpart(number-1);
-  //        $('#part-current').html("0"+(number-1));
-  //      }
 
   function nextpart(numberPart) {
     stop();
@@ -578,6 +606,9 @@ $(document).ready(function () {
       case 10 :
         mute(idPart10Lesson1);
         break;
+      case 11 :
+        mute(idPart11Lesson1);
+        break;
     }
     $(el.currentTarget).toggleClass('btn_no_mute');
   });
@@ -616,6 +647,9 @@ $(document).ready(function () {
       case 10 :
         play(idPart10Lesson1);
         break;
+      case 11 :
+        play(idPart11Lesson1);
+        break;
     }
   });
 
@@ -644,8 +678,8 @@ $(document).ready(function () {
     changeTvbg(1);
 //    nextpart(1);
     $("#show-sentence div").removeClass('active');
-    $("#show-sentence .part10").addClass('active');
-    part10Lesson1Play();
+    $("#show-sentence .part11").addClass('active');
+    part11Lesson1Play();
     control.removeClass('hide');
   });
 
